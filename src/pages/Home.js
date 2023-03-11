@@ -6,6 +6,7 @@ const Home = () => {
   <>
 
   <section className='home-wrapper-1 '>
+    
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -99,7 +100,7 @@ const Home = () => {
     <div class="col-smallstuff">
     <div className='d-flex flex-wrap justify-content-between align-items-center'>
           <div className='small-banner1 position-relative'>
-          <img src="images/spellbook-deskpad.png" className='img'
+          <img src="images/starwars.png" className='img'
           alt='small img'
           />
                     <div className='small-title'>KEYBOARDS</div>

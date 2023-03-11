@@ -101,7 +101,7 @@ const Footer = () => {
     <div className='container-xxl'>
       <div className='row'>
         <div className='col-12'>
-          <p className='text-center mb-0 text-white'>&copy; {new Date().getFullYear()}; Powered by my monkey </p>
+          <p className='text-center mb-0 text-white'>&copy; {new Date().getFullYear()}; Powered by  </p>
         </div>
       </div>
     </div>

@@ -1,7 +1,11 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
+import Login from "../pages/Login";
 const Header = () => {
+  var user = JSON.parse(localStorage.getItem('user'));
+  const location = useLocation()
+
   return (
     <>
       <header className="header-top-strip py-3">
@@ -11,7 +15,7 @@ const Header = () => {
               {
                 //mb is margin bottom
               }{" "}
-              <p className="text-white mb-0">Free Shipping Over £100 </p>
+              <p className="text-white mb-0">Welcome  </p>
             </div>
             <div className="col-6">
               <p className="text-end text-white mb-0">Call us on: yes</p>
@@ -65,7 +69,7 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex align-items-right gap-10 text-white float-end">
+                  <Link to = "/login"className="d-flex align-items-right gap-10 text-white float-end">
                     <img className="header-icons" src="images/user.png" alt="user" />
                     <p className="mb-0">
                       Login <br /> My Account
@@ -73,11 +77,13 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex align-items-right gap-10 text-white float-end">
+                  <Link to="/Basket"
+                  
+                   className="d-flex align-items-right gap-10 text-white float-end">
                     <img className="header-icons" src="images/checkout.png" alt="checkout" />
                     <div className="d-flex flex-column">
                       <span className="badge bg-white text-dark">0</span>
-                      <p className="mb-0">$ 100</p>
+                      <p className="mb-0"></p>
                     </div>
                   </Link>
                 </div>
@@ -137,8 +143,8 @@ const Header = () => {
                     </div>
                  
                     <NavLink className='text-white' to="/">Home</NavLink>
-                    <NavLink className='text-white' to="/">Our Store</NavLink>
-                    <NavLink className='text-white' to="/">Build Process</NavLink>
+                    <NavLink className='text-white' to="/store">Our Store</NavLink>
+                    <NavLink className='text-white' to="/buildprocess">Build Process</NavLink>
                     <NavLink className='text-white' to="/contact">Contact</NavLink>
                     
                   </div>

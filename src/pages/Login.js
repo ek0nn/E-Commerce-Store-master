@@ -1,49 +1,86 @@
+import axios from 'axios'
+import { id } from 'prelude-ls'
 import React from 'react'
-//import { useEffect, useState} from 'react'
+import { useNavigate, useNavigation } from 'react-router'
+import { useEffect, useState} from 'react'
+import { Link } from 'react-router-dom'
+
 
 const Login = () => {
-  return (
-    <section class="vh-100">
-    <div class="container py-5 h-100">
-      <div class="row d-flex align-items-center justify-content-center h-100">
-        <div class="col-md-8 col-lg-7 col-xl-6">
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg" 
-            class="img-fluid" alt="Phone"/>
+
+  const history=useNavigate();
+
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
+  async function submit(e){
+    e.preventDefault();
+  
+  try {
+
+        await axios.post("http://localhost:4000/signin",{ 
+                email,password
+
+         })
+         .then(res=> {
+          if(res.data =="exist"){
+            history("/",{state:{id:email}} )
+          }
+          else if(res.data =="newuser"){
+            alert("You are not logged in")
+          }
+         })
+
+         .catch(e=> {
+          alert("inncorrect details")
+          console.log(e)
+         })
+  } 
+  catch (e){
+    console.log(e)
+
+  }
+}
+  
+return (
+  <div class="container-signup">
+
+      <form action="POST" className="signup-form">
+      <h1 className="signup-title">Log in</h1>
+
+      <div class="container-signup2">
+      <div class = "signuphead"> Email: </div>
+        <input className="signup-input"
+          type="email"
+          onChange={(e) => {
+            setEmail(e.target.value);
+            
+          }}
+        />
         </div>
-        <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-            <h4 >Hello</h4>
-            <h5 className='py-2'>Please sign in below or Create an Account</h5>
-          <form action="POST">
-            <div class="form-outline mb-4">
-              <input type="email" id="form1Example13" class="form-control form-control-lg" />
-              <label class="form-label" for="form1Example13">Email address</label>
-            </div>
-  
-            <div class="form-outline mb-4">
-              <input type="password" id="form1Example23" class="form-control form-control-lg"/>
-              <label class="form-label" for="form1Example23">Password</label>
-            </div>
-  
-            <div class="d-flex justify-content-around align-items-center mb-4">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
-                <label class="form-check-label" for="form1Example3"> Remember me </label>
-              </div>
-              <a href="#!">Forgot password?</a>
-            </div>
-  
-            <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
-  
-          
-  
-          
-  
-          </form>
+        <div class="container-signup2">
+        <div class = "signuphead"> Password: </div>
+
+        <input className="signup-input"
+          type="password"
+          onChange={(e) => {
+            setPassword(e.target.value);
+          }}
+        />
         </div>
-      </div>
+       
+        <button type="submit" onClick={submit}
+            class="btn44 btn-primary btn-lg btn-block">Log in</button>
+              <br />
+      <p>Dont have an account ?</p>
+      <Link to="/signup"> Sign up now</Link>
+      <br />
+      </form>
+
+    
     </div>
-  </section>
   )
 }
+
 
 export default Login

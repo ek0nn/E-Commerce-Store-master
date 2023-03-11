@@ -1,12 +1,12 @@
-import React from 'react'
 import Sidebar from '../components/Sidebar'
 
-const Allproducts = () => {
-  return (
+import React from 'react'
 
-<>
-<Sidebar title="All products"/>
-<div className="product-wrapper home-wrapper-2 py-4"> 
+function Allproducts() {
+
+  return (
+    <div className="product-wrapper home-wrapper-2 py-4"> 
+    
 <div className='container-xxl'>
     <div className='row'>
         <div className='col-3'>
@@ -72,30 +72,92 @@ const Allproducts = () => {
         </div>
 
     </div>
+
+
     <div className='col-8'>
       <div className='sort-grid'>
         <div className='d-flex align-items-center '>
-          <h6 className='1 line'>Sort By:</h6>
+          <p>Sort By:</p>
           <select name='' className='form-control form form-select' id="">
             <option value="">Featured Products</option>
             <option value="">Best Selling</option>
             <option value="">Price, low to high</option>
             <option value="">Price, high to low</option>
 
-
-
           </select>
         </div>
+        <div className='d-flex align-align-items-center gap-5'>
+          <p className=''></p>
+        </div>
+        </div>
+
+  <div className="row2">
+  <div class="col-sm-6">
+    <div class="card">
+    <img class="card-img-top" src="images/spellbook-deskpad.png" alt="Card image cap"/>
+
+      <div class="card-body">
+        <h5 class="card-title">Name</h5>
+        <p class="card-text">Price.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card">
+    <img class="card-img-top" src="images/spellbook-deskpad.png" alt="Card image cap"/>
+
+      <div class="card-body">
+        <h5 class="card-title">Name</h5>
+        <p class="card-text">Price.</p>
+        <a href="#" class="btn btn-primary">Add to cart</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+    <img class="card-img-top" src="images/spellbook-deskpad.png" alt="Card image cap"/>
+
+      <div class="card-body">
+        <h5 class="card-title">Name</h5>
+        <p class="card-text">Price.</p>
+        <a href="#" class="btn btn-primary">Add to cart</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+    <img class="card-img-top" src="images/spellbook-deskpad.png" alt="Card image cap"/>
+
+      <div class="card-body">
+        <h5 class="card-title">Name</h5>
+        <p class="card-text">Price.</p>
+        <a href="#" class="btn btn-primary">Add to cart</a>
+      </div>
+    </div>
+  </div>
+  
+
+</div>
+        
+          </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+  
+        
+
     
-</div>
 
-</div>
 
-</div>
-
-</>    )
+   )
 }
+  
+
 
 export default Allproducts
