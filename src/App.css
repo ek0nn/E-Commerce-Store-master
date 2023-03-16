@@ -154,6 +154,8 @@ footer .input-group-text{
 
 /* Home paage */
 
+
+
 .main-banner-content {
   top: 15%;
   left: 5%;
@@ -271,13 +273,31 @@ margin: 0 0 5px;
 
 
   .col-smallstuff {
-    width: 290px;
+    width: 260px;
+    margin-left: 30px;
     margin-bottom: 10px;
     margin-top: 10px;
     background-color: #f3f3f3;
 
   }
- 
+ .col-smallstuff2{
+   width: 275px;
+   margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+
+ }
+ .col-smallstuff3{
+  width: 275px;
+  margin-left: 30px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   border-radius: 10px;
+   background-color: transparent;
+
+}
 
   .small-banner1-content {
     top: 15%;
@@ -294,8 +314,8 @@ margin: 0 0 5px;
     
 
 .img{
-width: 270px;
-gap: 10px;
+  width: 100%;
+
 }
 
 .carousel {
@@ -304,7 +324,7 @@ gap: 10px;
 
 .w-100{
   width: 100%!important;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .p-33{
   padding: 1rem!important;
@@ -739,6 +759,13 @@ color: #0f031e;
   margin-top: 15px
 }
 
+.bglog{
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
 .signup-form{
@@ -781,4 +808,168 @@ color: #0f031e;
 
 .buildmain{
   background-color: #E6E6FA;
+}
+
+.chat{
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+}
+
+.supportT{
+  margin-top: 10%;
+  margin-left: 40px;
+}
+
+.pDescp{
+  margin-left: 43px;
+  margin-top: 20px;
+  max-width: 400px;
+  margin-bottom: 30px;
+
+}
+.containerDescChat{
+  max-width: 40px;
+}
+
+.ml-3{ 
+  margin-left: 40px;
+  margin-bottom: 40px;
+
+}
+
+.sizebtn{
+  margin-top: 10px;
+  margin-left: 2px;
+  width: 100px;
+  height: 35px;}
+
+.subbtn22 {
+margin-bottom: 10px;
+}
+
+.C888{
+  width: 400px;
+  height: 400px;
+  background-color: #d1512d;
+}
+
+.deliveryinfo{
+  background-color: transparent;
+  height: 300px;
+  margin-bottom: 50px;
+
+}
+
+.position2-relative{
+  position: relative!important;
+  margin-bottom: 10px;
+  height: 150px;
+
+}
+
+.img2{
+  display: flex;
+  flex-direction: column;
+  width: auto;    
+  max-height: 100%; 
+  object-fit: cover;
+}
+
+.dds{
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.ppptextpp{
+  font-size: 15px;
+}
+.texticons99{
+  padding-top: 180px;
+}
+
+  .texticons9{
+    background-color: #f0f2f5;
+    height: 100px;
+    justify-content: center;
+    padding-top: 30px;
+    color: rgb(0, 0, 0);
+  }
+
+  .ccc{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .dda{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .aa22aa{
+    margin-top: 150px;
+    justify-content: center;
+  }
+
+.buildTitle{
+  padding-top: 40px;
+  margin-bottom: 30px;
+}
+
+.buildCard{
+  position: relative;
+  max-width: 540px;
+  border-radius:24px; 
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; 
+
+}
+.cardRight{
+  margin-left: inherit;
+}
+.left{
+
+
+        background-color: #F0F2F5;
+    
+}
+
+.spCard{
+  max-width: 1300px;
+  background-color: #F0F2F5;
+  height: 500px;
+
+}
+
+.imgBuild{
+  height: 100%;
+  margin-top: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 80px;
+  width: 1000px;
+}
+
+.colsp{
+  
+    flex: 0 0 auto;
+    width: 55%;
+    height: 400px;
+  
+
+}
+
+.colsp2 {
+  flex: 0 0 auto;
+  width: 45%;
+}
+
+.sp99{
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.spTitle{
+  margin-top: 65px;
 }

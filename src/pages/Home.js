@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
   <>
-
+<div className='all'> 
   <section className='home-wrapper-1 '>
     
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -33,7 +33,10 @@ const Home = () => {
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+<div class="container-fluid text-center h1 texticons9 ">
+Best Sellers</div>
     <div className='container-xxl'>
+
       <div className='row'>
         <div className='col-6'>
           <div className='main-banner position-relative p-3'>
@@ -92,12 +95,12 @@ const Home = () => {
         </div>
         </div>
     </div>
-    <div class="container-sm text-center pt-5 h1">New Arrivals</div>
-  </section>
-  <section lassName='home-wrapper-2 '>
+  <div class="container-fluid text-center h1 texticons9 ">
+New Arrivals</div>
+
   <div class="container">
   <div class="row row-cols-4 w-5 p-3 sm ">
-    <div class="col-smallstuff">
+    <div class="col-smallstuff2">
     <div className='d-flex flex-wrap justify-content-between align-items-center'>
           <div className='small-banner1 position-relative'>
           <img src="images/starwars.png" className='img'
@@ -109,7 +112,7 @@ const Home = () => {
           </div>
       </div>
 
-    <div class="col-smallstuff">
+    <div class="col-smallstuff2">
           <div className='small-banner1 position-relative'>
           <img src="images/NK87.png" className='img'
           alt='small img'
@@ -120,7 +123,7 @@ const Home = () => {
           </div>
 
 
-<div class="col-smallstuff">
+<div class="col-smallstuff2">
           <div className='small-banner1 position-relative'>
           <img src="images/starwars.png" className='img'
           alt='small img'
@@ -129,7 +132,7 @@ const Home = () => {
 
           </div>
           </div>
-          <div class="col-smallstuff">
+          <div class="col-smallstuff2">
           <div className='small-banner1 position-relative'>
           <img src="images/4switches.png" className='img'
           alt='small img'
@@ -139,7 +142,7 @@ const Home = () => {
           </div>
           
           </div>
-          <div class="col-smallstuff">
+          <div class="col-smallstuff2">
           <div className='small-banner1 position-relative'>
           <img src="images/mousepad2.png" className='img'
           alt='small img'
@@ -149,7 +152,7 @@ const Home = () => {
           </div>
           
           </div>
-          <div class="col-smallstuff">
+          <div class="col-smallstuff2">
           <div className='small-banner1 position-relative'>
           <img src="images/pcb1.png" className='img'
           alt='small img'
@@ -158,7 +161,7 @@ const Home = () => {
           </div>
           
           </div>
-          <div class="col-smallstuff">
+          <div class="col-smallstuff2">
           <div className='small-banner1 position-relative'>
           <img src="images/penguinswitch.png" className='img'
           alt='small img'
@@ -168,7 +171,7 @@ const Home = () => {
           </div>
           
           </div>
-          <div class="col-smallstuff">
+          <div class="col-smallstuff2">
           <div className='small-banner1 position-relative'>
           <img src="images/penguinswitch.png" className='img'
           alt='small img'
@@ -180,32 +183,154 @@ const Home = () => {
           </div>
   
   </div>
-</div>
-
-<div class="container p-3 pt-5">
-<div class="row">
-
-<div class="col-xl-6 col-lg-10"><div>
-  <p class="subtitle mb-3 text-danger">Deal of the week</p>
-  <h3 class="h1">Featured Keyboard</h3><p class="text-muted">
-    <del class="me-3">$110.00</del><span>$59.00</span></p><p class="mb-4">
-      <span class="badge badge-danger p-3 badge bg-danger">$50 off</span>
-      </p>
-      <div class="bg-white px-5 py-4 shadow mb-4" id="countdown">
-        <div class="row justify-content-between">
-          <div class="col-6 col-sm-3 text-center mb-4 mb-sm-0">
-            <h6 class="h4 mb-2 days">14&nbsp;</h6><span class="text-muted">days</span></div>
-            <div class="col-6 col-sm-3 text-center mb-4 mb-sm-0"><h6 class="h4 mb-2 days">23&nbsp;</h6><span class="text-muted">hours</span></div>
-            <div class="col-6 col-sm-3 text-center mb-4 mb-sm-0"><h6 class="h4 mb-2 days">58&nbsp;</h6><span class="text-muted">minutes</span></div>
-            <div class="col-6 col-sm-3 text-center mb-4 mb-sm-0"><h6 class="h4 mb-2 days">28&nbsp;</h6><span class="text-muted">seconds</span></div>
-            </div></div><p><button type="button" class="btn btn-outline-dark">Shop now</button></p>
-            </div>
-            </div>
-            </div>
-            </div>
-
-  </section>
   
+</div>
+<div class="container-fluid text-center h1 texticons9 ">
+Our Promises</div>
+<div className='container-xxl ccc'> 
+    <div className = "row row-cols-4 w-5 p-3 sm "> 
+
+    <div class="col-smallstuff3">   
+     <div className='small-banner1 position2-relative'>
+          <img src="images/enviro.png" className='img2'
+          alt='small img'
+          />
+       </div>
+       <h5 className='dds'> Sustainable Shipping </h5>
+       <p className='ppptextpp'>Our shipping services cover domestic locations within the UK and Channel Islands. We prioritize sustainability and offset the carbon emissions of all our shipped packages.</p>
+
+       </div>
+
+    <div class="col-smallstuff3">   
+     <div className='small-banner1 position2-relative'>
+          <img src="images/rating.png" className='img2'
+          alt='small img'
+          />
+          
+       </div>
+       <h5 className='dds'> Customer Satisfaction </h5>
+       <p className='ppptextpp'>Gain valuable insights from our esteemed customers through their testimonials and service reviews, which elucidate why we have consistently ranked among the premier custom keyboard retailers in the UK</p>
+       </div>
+       <div class="col-smallstuff3">   
+     <div className='small-banner1 position2-relative'>
+          <img src="images/shield.png" className='img2'
+          alt='small img'
+          />
+       </div>
+       <h5 className='dds'> Waranty </h5>
+       <p>Each of our bespoke keyboards undergoes meticulous testing and rigorous quality assurance prior to dispatch. In the rare event of an issue, we provide complimentary and straightforward repair, replacement, and resolution services.</p>
+       </div>
+       <div class="col-smallstuff3">   
+     <div className='small-banner1 position2-relative'>
+          <img src="images/online-chat.png" className='img2'
+          alt='small img'
+          />
+          
+       </div>
+       <h5 className='dds'> Support </h5>
+       <p className='ppptextpp'>Our team is available seven days a week to offer exceptional pre-sales support, comprehensive aftercare, and prompt responses to any inquiries or concerns you may have. Don't hesitate to reach out to us via message, and we will be delighted to assist you.</p>
+       </div>
+       </div>
+       
+    </div>
+
+<div class="container-fluid text-center h1 texticons9 ">
+On Sale</div>
+  <div class="container dda">
+    
+<div class="row row-cols-4 w-5 p-3 sm ">
+
+<div class="col-smallstuff2">
+<div className='d-flex flex-wrap justify-content-between align-items-center'>
+      <div className='small-banner1 position-relative'>
+      <img src="images/starwars.png" className='img'
+      alt='small img'
+      />
+                <div className='small-title'>KEYBOARDS</div>
+
+      </div>
+      
+      </div>
+      
+  </div>
+  <div class="col-smallstuff2">
+        <div className='small-banner1 position-relative'>
+        <img src="images/penguinswitch.png" className='img'
+        alt='small img'
+        />
+                  <div className='small-title'>KEYBOARDS</div>
+
+        </div>
+        
+        </div>
+        <div class="col-smallstuff2">
+        <div className='small-banner1 position-relative'>
+        <img src="images/penguinswitch.png" className='img'
+        alt='small img'
+        />
+                  <div className='small-title'>KEYBOARDS</div>
+
+        </div>
+        
+        </div>
+        <div class="col-smallstuff2">
+        <div className='small-banner1 position-relative'>
+        <img src="images/penguinswitch.png" className='img'
+        alt='small img'
+        />
+                  <div className='small-title'>KEYBOARDS</div>
+
+        </div>
+        
+        </div>
+        <div class="col-smallstuff2">
+        <div className='small-banner1 position-relative'>
+        <img src="images/penguinswitch.png" className='img'
+        alt='small img'
+        />
+                  <div className='small-title'>KEYBOARDS</div>
+
+        </div>
+        
+        </div>
+        <div class="col-smallstuff2">
+        <div className='small-banner1 position-relative'>
+        <img src="images/penguinswitch.png" className='img'
+        alt='small img'
+        />
+                  <div className='small-title'>KEYBOARDS</div>
+
+        </div>
+        
+        </div>
+        <div class="col-smallstuff2">
+        <div className='small-banner1 position-relative'>
+        <img src="images/penguinswitch.png" className='img'
+        alt='small img'
+        />
+                  <div className='small-title'>KEYBOARDS</div>
+
+        </div>
+        
+        </div>
+        
+        <div class="col-smallstuff2">
+        <div className='small-banner1 position-relative'>
+        <img src="images/penguinswitch.png" className='img'
+        alt='small img'
+        />
+                  <div className='small-title'>KEYBOARDS</div>
+
+        </div>
+        
+        </div>
+  </div>
+  
+  </div>
+  
+    
+  </section>
+  </div>
   </>
   );
 };

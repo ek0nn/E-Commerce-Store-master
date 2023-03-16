@@ -1,7 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import {ITEMS} from ".././item"
 import { Product } from '../Product'
+
+import { useParams } from "react-router-dom";
+     
 function Store() {
+  let { id } = useParams();
+
   return (
     <div className="product-wrapper home-wrapper-2 py-4"> 
    
@@ -95,11 +101,13 @@ function Store() {
             <div className='d-flex align-align-items-center gap-5'>
               <p className=''></p>
             </div>
+            
             <div className='row'> 
+
         {ITEMS.map((product) =>
         <Product data={product}/>)}
-     
         </div>
+        
             </div>
             </div>
             </div>

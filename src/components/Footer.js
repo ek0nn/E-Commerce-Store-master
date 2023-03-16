@@ -10,26 +10,7 @@ const Footer = () => {
     <footer className='py-4'>
       <div className='container-xxl'>
         <div className='row align-items-center'>
-          <div className='col-5'>
-            <div className='footer-top-data d-flex gap-30 align-items-center'>
-              <img src="/images/newsletter.png" alt='newsletter' />
-              <h4 className='mb-5 text-white'>Sign Up for Newsletter </h4>
-            </div>
-          </div>
-          <div className='col-7'>
-          <div class="input-group">
-                <input
-                  type="text"
-                  className="form-control py-1"
-                  placeholder="Please enter your Email Address"
-                  aria-label="Please enter your Email Address"
-                  aria-describedby="basic-addon2"
-                />
-                <span class="input-group-text p-3" id="basic-addon2">
-                  Subscribe
-                </span>
-              </div>
-          </div>
+          
 
         </div>
       </div>
@@ -101,7 +82,7 @@ const Footer = () => {
     <div className='container-xxl'>
       <div className='row'>
         <div className='col-12'>
-          <p className='text-center mb-0 text-white'>&copy; {new Date().getFullYear()}; Powered by  </p>
+          <p className='text-center mb-0 text-white'> Mohammed Sadhak  </p>
         </div>
       </div>
     </div>

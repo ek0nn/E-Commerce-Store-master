@@ -40,11 +40,11 @@ const Login = () => {
     console.log(e)
 
   }
-}
+} 
   
 return (
-  <div class="container-signup">
-
+  //<div className='container-fluid bglog' style={{ backgroundImage: "url(/images/split_background.svg)" }}>
+  <div class="container-fluid container-signup">
       <form action="POST" className="signup-form">
       <h1 className="signup-title">Log in</h1>
 
@@ -79,6 +79,8 @@ return (
 
     
     </div>
+   // </div>
+
   )
 }
 
