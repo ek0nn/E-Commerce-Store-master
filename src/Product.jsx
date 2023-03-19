@@ -14,7 +14,8 @@ export const Product = (props) => {
 
   return (
 
-    <div class="col-smallstuff">
+    <div class="col-smallstuff"
+    key={id}>
     <div className='small-banner1 position-relative'>
     <img src={productImg} className='img'
     alt='small img'
@@ -23,10 +24,7 @@ export const Product = (props) => {
               <div className='small-title'>{price}</div>
               
              
-              <button className='addToCartBtn' onClick={() => addToBasket(id)}>
-                Add to cart {amount > 0 && <> ({amount})</>}
               
-              </button>
               <Link to={`/Specificproduct/`+ id}>
               <button className='addToCartBtn'>
                 View Item

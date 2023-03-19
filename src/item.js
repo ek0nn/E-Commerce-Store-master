@@ -13,6 +13,7 @@ export const ITEMS =      [
     name: "Akko ACR 61 ",
     price: 80,
     productImg: Akko1,
+    pDesc: " This model comes with a translucent case made with high-quality acrylic material. This form factor could be a good presence for RGB keyboard, lights could shine through the case but not too dazzling since the case is with a well matted texture. Extra set of ASA profile PBT keycaps are included as a gift, you have more choices of make your own tone of a pink keyboard"
 
 },
 { 

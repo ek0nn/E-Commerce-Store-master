@@ -1,5 +1,7 @@
+
 const express = require("express")
 const collection = require('./database')
+const collection1 = require('./database')
 const cors =require ("cors")
 const app = express()
 app.use(express.json())
@@ -60,6 +62,31 @@ app.post("/signup", async (req,res) => {
 
   }
 })
+
+
+app.post("/Checkout", async (req,res) => {
+  const{firstname,surname,address,address2,number,postcode,city} = req.body
+  
+
+  const data = {
+    firstname:firstname,
+    surname:surname,
+    address:address,
+    address2:address2,
+    number:number,
+    postcode:postcode,
+    city:city,
+    
+  }
+  
+      await collection1.insertMany([data])
+    
+   
+  
+})
+
+
+
 app.listen(4000, ()=> {
-  console.log("port con");
+console.log("port con");
 })

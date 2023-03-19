@@ -33,32 +33,33 @@ const sitem = ITEMS.filter(product => product.id === id);
 
 {sitem.map(pr => (
 
-        <div  class="card-body">
+        <div  class="card-body" key={pr.id} >
           <h5 class="card-title spTitle">{pr.name}</h5>
           <p class="card-text spSku">5DFS7238DN</p>
           <h5 className='card-text spPrice'> Price</h5>
           <h5 className='card-text spPrice2'> ${pr.price}</h5>
           <p class="card-text spSku spText22">Shipping calculated at checkout</p>
           <h5 className='card-text spQuan '> Quantity</h5>
-          <button className='addToCartBtn' onClick={() => addToBasket(pr.id)}>
+          
+          <h5 className='card-text spQuan '> Description</h5>
+
+              <p class="card-text spSku">{pr.pDesc} </p>
+              <button className='addToCartBtn' onClick={() => addToBasket(pr.id)}>
               Add to cart
               </button>
           </div>
 
       ))}
   </div>
- 
   </div> 
  
  
 </div>
 <div className='subT'>
 
-        <p className='subtotal'>Subtotal : £ </p>
-
       </div>
       <Link to="/Store">
-      <button className="btn-submit-checkout" type="submit">Continue to checkout </button>
+      <button className="btn-submit-checkout" type="submit">Continue Shopping </button>
       </Link>
 
 </div>

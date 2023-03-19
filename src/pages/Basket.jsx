@@ -4,11 +4,12 @@ import { ITEMS } from '../item';
 import { useContext } from 'react';
 import { BasketItem, getTotalV} from '../BasketItem';
 import { NavLink, Link } from "react-router-dom";
-
+import { useState } from 'react';
 function Basket() {
 
   const { basketItems, totalBasketPrice} = useContext(StoreContext);
   const totalPrice = totalBasketPrice();
+  const [tp, setTp] = useState(totalBasketPrice);
 
 
   return (

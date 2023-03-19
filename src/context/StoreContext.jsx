@@ -32,9 +32,7 @@ export const StoreContextProvider = (props) => {
     };
 
 
-    const addToBasket1 = (itemId) => {
-      setBasketItems((prev) => ({...prev,[itemId]: prev[itemId]}));
-  };
+  
     const addToBasket = (itemId) => {
         setBasketItems((prev) => ({...prev,[itemId]: prev[itemId] + 1}));
     };
@@ -42,7 +40,7 @@ export const StoreContextProvider = (props) => {
         setBasketItems((prev) => ({...prev,[itemId]: prev[itemId] - 1}));
     };
 
-    const cValue = {addToBasket1,basketItems ,addToBasket, removeItem, totalBasketPrice, };
+    const cValue = {basketItems ,addToBasket, removeItem, totalBasketPrice, };
   return (
     <StoreContext.Provider value={cValue}>{props.children}</StoreContext.Provider>
   );

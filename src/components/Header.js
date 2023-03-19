@@ -2,10 +2,13 @@ import React from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 import Login from "../pages/Login";
+import { useContext } from "react";
+import { StoreContext } from "../context/StoreContext";
 const Header = () => {
   var user = JSON.parse(localStorage.getItem('user'));
   const location = useLocation()
-
+  const { basketItems, totalBasketPrice} = useContext(StoreContext);
+  const totalPrice = totalBasketPrice();
   return (
     <>
       <header className="header-top-strip py-3">
@@ -82,7 +85,7 @@ const Header = () => {
                    className="d-flex align-items-right gap-10 text-white float-end">
                     <img className="header-icons" src="images/checkout.png" alt="checkout" />
                     <div className="d-flex flex-column">
-                      <span className="badge bg-white text-dark">0</span>
+                      <span className="badge bg-white text-dark">£{totalPrice}</span>
                       <p className="mb-0"></p>
                     </div>
                   </Link>
