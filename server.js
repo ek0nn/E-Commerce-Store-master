@@ -1,6 +1,5 @@
-
 const express = require("express")
-const collection = require('./database')
+const collection = require('./loginDetails')
 const collection1 = require('./database')
 const cors =require ("cors")
 const app = express()
@@ -39,7 +38,7 @@ app.post("/signup", async (req,res) => {
     firstname:firstname,
     surname:surname,
     email:email,
-    password:password
+    password:password,
    
   }
 
@@ -68,7 +67,7 @@ app.post("/Checkout", async (req,res) => {
   const{firstname,surname,address,address2,number,postcode,city} = req.body
   
 
-  const data = {
+  const data2 = {
     firstname:firstname,
     surname:surname,
     address:address,
@@ -79,7 +78,7 @@ app.post("/Checkout", async (req,res) => {
     
   }
   
-      await collection1.insertMany([data])
+      await collection1.insertMany([data2])
     
    
   

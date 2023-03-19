@@ -8,25 +8,6 @@ mongoose.connect("mongodb+srv://ekon1:1234@cluster0.3ereih1.mongodb.net/?retryWr
 })
 
 
-const newSchema = new mongoose.Schema({
-
-firstname:{
-  type:String,
-  required:true
-},
-surname:{
-  type:String,
-  required:true
-},
-email:{
-  type:String,
-  required:true
-},
-password:{
-  type:String,
-  required:true
-}
-})
 const checkout = new mongoose.Schema({
 
   firstname:{
@@ -62,8 +43,6 @@ const checkout = new mongoose.Schema({
   })
 
  
-const collection = mongoose.model("penis", newSchema)
 const collection1 = mongoose.model("order", checkout)
 
-module.exports=collection
 module.exports=collection1

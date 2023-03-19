@@ -26,7 +26,7 @@ const Signup = () => {
           if (res.data == "exist") {
             alert("An account using the above email has already been used");
           } else if (res.data == "newuser") {
-            history("/");
+            history("/", {state:{id:email}});
           }
         })
 

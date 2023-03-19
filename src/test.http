@@ -2,8 +2,8 @@ POST http://localhost:4000/signup
 Content-Type: application/json
 
 {
-    "firstname":"sa5",
-    "surname":"e44skon",
-    "email":"4@gmail.com",
+    "firstname":"setFirstname",
+    "surname":"setFirstname",
+    "email":"setFirstname@gmail.com",
     "password":"1s234"
 }
