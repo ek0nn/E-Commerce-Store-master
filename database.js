@@ -38,7 +38,14 @@ const checkout = new mongoose.Schema({
     type:String,
     required:true
   },
-  
+  cardItems: {
+    type: Object,
+    required: true
+  },
+  totalPrice: {
+    type: String,
+    required: true
+  },
 
   })
 
