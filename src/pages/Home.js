@@ -1,7 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { useParams } from "react-router-dom";
+import { ITEMS } from '../item';
+import { StoreContext } from '../context/StoreContext';
 
-const Home = () => {
+
+
+const Home = (props) => {
+  const { id } = useParams();
+  const sitem = ITEMS.filter(product => product.id === id);
   return (
   <>
 <div className='all'> 
@@ -47,7 +54,7 @@ Best Sellers</div>
             <h6>Instock Now</h6>
             <h3>Discord TKL</h3>
             <p>From £199.99 </p>
-            <Link className='button'>BUY NOW</Link>
+            <Link to={`/Specificproduct/16`} className='button'>BUY NOW</Link>
             </div>
           </div>
         </div>
@@ -55,7 +62,28 @@ Best Sellers</div>
         <div className='col-6'>
           <div className='d-flex flex-wrap justify-content-between align-items-center'>
           <div className='small-banner position-relative p-3'>
+
           <img src="images/penguinswitch.png" className='img-fluid rounded-2'
+          alt='small img'
+          />
+          <div className='small-banner-content position-absolute'>
+            <h6>Penguin Switches</h6>
+            <p>From £8.99 </p>
+            <Link to={`/Specificproduct/1`} className='button-small'>BUY NOW</Link>
+
+          </div>
+          </div>
+          <div className='small-banner position-relative p-3'>
+          <img src= "images/gmkevildolch.jpg" className='img-fluid rounded-2'
+          alt='small img'
+          />
+          <div className='small-banner-content position-absolute'>
+            <h6>Evil Keyboard</h6>
+            <p>From £120.00 </p>
+          </div>
+          </div>
+          <div className='small-banner position-relative p-3'>
+          <img src="images/cyberboard.jpg" className='img-fluid rounded-2'
           alt='small img'
           />
           <div className='small-banner-content position-absolute'>
@@ -64,25 +92,7 @@ Best Sellers</div>
           </div>
           </div>
           <div className='small-banner position-relative p-3'>
-          <img src="images/penguinswitch.png" className='img-fluid rounded-2'
-          alt='small img'
-          />
-          <div className='small-banner-content position-absolute'>
-            <h6>Penguin Switches</h6>
-            <p>From £8.99 </p>
-          </div>
-          </div>
-          <div className='small-banner position-relative p-3'>
-          <img src="images/penguinswitch.png" className='img-fluid rounded-2'
-          alt='small img'
-          />
-          <div className='small-banner-content position-absolute'>
-            <h6>Penguin Switches</h6>
-            <p>From £8.99 </p>
-          </div>
-          </div>
-          <div className='small-banner position-relative p-3'>
-          <img src="images/penguinswitch.png" className='img-fluid rounded-2'
+          <img src="images/GMKAmethyst.jpg" className='img-fluid rounded-2'
           alt='small img'
           />
           <div className='small-banner-content position-absolute'>
@@ -106,7 +116,7 @@ New Arrivals</div>
           <img src="images/starwars.png" className='img'
           alt='small img'
           />
-                    <div className='small-title'>KEYBOARDS</div>
+                    <div className='small-title'>Limited Edition Starwars Keyboard</div>
 
           </div>
           </div>
@@ -117,7 +127,7 @@ New Arrivals</div>
           <img src="images/NK87.png" className='img'
           alt='small img'
           />
-                    <div className='small-title'>KEYBOARDS</div>
+                    <div className='small-title'>Matt Black Keyboard</div>
 
           </div>
           </div>
@@ -125,10 +135,10 @@ New Arrivals</div>
 
 <div class="col-smallstuff2">
           <div className='small-banner1 position-relative'>
-          <img src="images/starwars.png" className='img'
+          <img src="images/cyberboard.jpg" className='img'
           alt='small img'
           />
-                    <div className='small-title'>KEYBOARDS</div>
+                    <div className='small-title'>CyberBoard</div>
 
           </div>
           </div>
@@ -137,7 +147,7 @@ New Arrivals</div>
           <img src="images/4switches.png" className='img'
           alt='small img'
           />
-                    <div className='small-title'>KEYBOARDS</div>
+                    <div className='small-title'>MX4 Switches</div>
 
           </div>
           
@@ -147,7 +157,7 @@ New Arrivals</div>
           <img src="images/mousepad2.png" className='img'
           alt='small img'
           />
-                    <div className='small-title'>KEYBOARDS</div>
+                    <div className='small-title'>Aztec Mousepad</div>
 
           </div>
           
@@ -157,7 +167,7 @@ New Arrivals</div>
           <img src="images/pcb1.png" className='img'
           alt='small img'
           />
-          <div className='small-title'>KEYBOARDS</div>
+          <div className='small-title'>Glossy White PCB</div>
           </div>
           
           </div>
@@ -166,17 +176,17 @@ New Arrivals</div>
           <img src="images/penguinswitch.png" className='img'
           alt='small img'
           />
-                    <div className='small-title'>KEYBOARDS</div>
+                    <div className='small-title'>Penguin Switches</div>
 
           </div>
           
           </div>
           <div class="col-smallstuff2">
           <div className='small-banner1 position-relative'>
-          <img src="images/penguinswitch.png" className='img'
+          <img src="images/lotr.png" className='img'
           alt='small img'
           />
-                    <div className='small-title'>KEYBOARDS</div>
+                    <div className='small-title'>Lord Of The Rings </div>
 
           </div>
           

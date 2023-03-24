@@ -1,6 +1,6 @@
 
 const express = require("express")
-const collection = require('./database')
+const collection = require('./loginDetails')
 const collection1 = require('./database')
 const cors = require("cors")
 const app = express()

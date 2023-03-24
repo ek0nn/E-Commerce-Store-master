@@ -15,10 +15,8 @@ import Store from './pages/Store.jsx'
 import Basket from './pages/Basket';
 import { StoreContextProvider } from './context/StoreContext';
 import Build from './pages/Build';
-import Profile from './support/Profile';
-import Support from './support/Support';
-import CE from './support/CE';
 import { Single } from './Single';
+import Keycaps from './pages/Keycaps';
 function App() {
   
 
@@ -30,7 +28,6 @@ function App() {
 <Routes>
       <Route path='login' element = {<Login/>}/>
       <Route path='signup' element = {<Signup/>}/>
-      <Route path='support/CE' element ={<CE />} />
 <Route path='/' element = {<Layout/>}>  
 <Route index element ={<Home />} />
       <Route path ="about" element = {<About />}/>
@@ -41,9 +38,11 @@ function App() {
       <Route path='Basket' element = {<Basket />}/>
       <Route path ="Store" element = {<Store />} />
       <Route path='BuildProcess' element = {<Build/>} />
-      <Route path='Support' element = {<Support />} />
       <Route path='Test2' element = {<Single />} />
       <Route path="Specificproduct/:id" element = {<Specificproduct/>}/>
+      <Route path="Specificproduct/:type" element = {<Specificproduct/>}/>
+      <Route path="Keycaps/:type" element = {<Keycaps/>}/>
+
 
     
       

@@ -13,7 +13,7 @@ import { Fragment } from 'react';
 
 const Specificproduct = (props) => {
   const { addToBasket, basketItems } = useContext(StoreContext)
-  const { id } = useParams();
+  const { id,type } = useParams();
   const sitem = ITEMS.filter(product => product.id === id);
 
   return (

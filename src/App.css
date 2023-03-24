@@ -70,6 +70,15 @@ a {
   color: white;
 
 }
+.button-small{
+  background-color: var(--color-darkergrey);
+  color: white;
+  font-size: 10px;
+  padding: 8px 15px;
+  margin-top: 20px;
+  margin-right: 10px;
+  border-radius: 30px;
+}
 .gap-10 {
   gap: 10px;
 }
@@ -239,7 +248,7 @@ margin: 0 0 5px;
 }
 .small-banner-content {
   top: 15%;
-  left: 5%;
+  left: 7%;
 }
 
 .small-banner img {
@@ -954,8 +963,7 @@ margin-bottom: 10px;
   
     flex: 0 0 auto;
     width: 55%;
-    height: 400px;
-  
+    height: 100%;  
 
 }
 
@@ -972,4 +980,30 @@ margin-bottom: 10px;
 
 .spTitle{
   margin-top: 65px;
+}
+
+.customerService{
+  margin-top: 8%;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  font-size: 50px;
+}
+
+.pcustomerService{
+  margin-left: 85px;
+  max-width: 400px;
+  margin-bottom: 20px;
+
+}
+
+.btn9991{
+  margin-left: 85px;
+  margin-bottom: 80px;
+
+
+}
+
+.small-title-name{
+  font-size: 20px;
+margin-top: 15px;
 }

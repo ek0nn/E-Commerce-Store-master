@@ -2,11 +2,18 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import {ITEMS} from ".././item"
 import { Product } from '../Product'
+import { useContext } from 'react';
+import { StoreContext } from '../context/StoreContext';
 
 import { useParams } from "react-router-dom";
      
-function Store() {
-  const { id,type } = useParams();
+function Keycaps() {
+    
+    const { addToBasket, basketItems } = useContext(StoreContext)
+    const { id,type } = useParams();
+
+     const sitem = ITEMS.filter(product => product.type === type);
+
 
   return (
     <div className="product-wrapper home-wrapper-2 py-4"> 
@@ -22,10 +29,7 @@ function Store() {
 
 
   <a href="" class="list-group-item list-group-item-action">Keyboards</a>
-  <Link to="/Keycaps/99">
-  <a href= "" id class="list-group-item list-group-item-action">Keycaps</a>
-  </Link>
-
+  <a href="" class="list-group-item list-group-item-action">Keycaps</a>
   <a href="" class="list-group-item list-group-item-action">MouseMats</a>
   <a href="" class="list-group-item list-group-item-action disabled">Switches</a>
   <a href="" class="list-group-item list-group-item-action disabled">PCB</a>
@@ -106,12 +110,34 @@ function Store() {
             </div>
             
             <div className='row'> 
+            {sitem.map(pr => (
 
-        {ITEMS.map((product) =>
-        <Product data={product}/>)}
+
+            <div class="col-smallstuff"
+             key={pr.type}>
+             <div className='small-banner1 position-relative'>
+             <img src={pr.productImg} className='img'
+             alt='small img'
+               />
+              <div className='small-title-name'>{pr.name}</div>
+              <div className='small-title'>£{pr.price}.00</div>
+              
+             
+              
+              <Link to={`/Specificproduct/`+ pr.id}>
+              <button className='addToCartBtn'>
+                View Item
+
+              </button>
+             </Link>
+            
+    </div>
+    </div>
+  ))}
+      
         </div>
-        
-            </div>
+     
+      </div>
             </div>
             </div>
             </div>
@@ -123,4 +149,4 @@ function Store() {
   )
 }
 
-export default Store;
+export default Keycaps;
