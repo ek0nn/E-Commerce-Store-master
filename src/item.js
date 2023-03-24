@@ -25,7 +25,8 @@ export const ITEMS =      [
     name: "Akko ACR 61 ",
     price: 80.00,
     productImg: Akko1,
-    pDesc: " This model comes with a translucent case made with high-quality acrylic material. This form factor could be a good presence for RGB keyboard, lights could shine through the case but not too dazzling since the case is with a well matted texture. Extra set of ASA profile PBT keycaps are included as a gift, you have more choices of make your own tone of a pink keyboard"
+    pDesc: " This model comes with a translucent case made with high-quality acrylic material. This form factor could be a good presence for RGB keyboard, lights could shine through the case but not too dazzling since the case is with a well matted texture. Extra set of ASA profile PBT keycaps are included as a gift, you have more choices of make your own tone of a pink keyboard",
+    type: "keyboards",
 
 },
 { 
@@ -34,6 +35,8 @@ export const ITEMS =      [
     name: "Akko ACR Blue",
     price: 20.00,
     productImg: AkkoBlue,
+    type: "keyboards",
+
 
 },
 { 
@@ -41,7 +44,7 @@ export const ITEMS =      [
     name: "Cherry MX Black",
     price: 10.00,
     productImg: blackmx,
-    type: "99",
+    type: "switches",
 
 },
 { 
@@ -49,6 +52,7 @@ export const ITEMS =      [
     name: "CP3 Mechanical Gaming Keyboard",
     price: 10.00,
     productImg: cp3,
+    type: "keyboards",
 
 },
 { 
@@ -56,7 +60,7 @@ export const ITEMS =      [
     name: "Sappihre Keycaps",
     price: 10.00,
     productImg: bluekc,
-    type: "99",
+    type: "keycaps",
 
 
 },
@@ -65,6 +69,7 @@ export const ITEMS =      [
     name: "Ducky one 2 mini",
     price: 10.00,
     productImg: ducky,
+    type: "keyboards",
 
 
 },
@@ -73,7 +78,7 @@ export const ITEMS =      [
     name: "Emi Shadows",
     price: 10.00,
     productImg: emi,
-    type: "99",
+    type: "switches",
 
 },
 { 
@@ -81,28 +86,31 @@ export const ITEMS =      [
     name: "Nomad Keycaps selection",
     price: 10.00,
     productImg: nomadkc,
-    type: "99",
+    type: "keycaps",
 
 },
 { 
     id: '9',
     name: "GMK Amethyst Keyboard",
     price: 10.00,
-    productImg: gmkam
+    productImg: gmkam,
+    type: "keyboards",
 
 },
 { 
     id: '10',
     name: "GMK Evil dolch Keyboard",
     price: 10.00,
-    productImg: gmkevil
+    productImg: gmkevil,
+    type: "keyboards",
 
 },
 { 
     id: '11',
     name: "GMK Rainyday Keyboard",
     price: 10.00,
-    productImg: gmkrain
+    productImg: gmkrain,
+    type: "keyboards",
 
 },
 { 
@@ -110,7 +118,7 @@ export const ITEMS =      [
     name: "Kailh Pro Switches",
     price: 10.00,
     productImg: kailhp,
-    type: "99",
+    type: "switches",
 
 
 },
@@ -118,28 +126,33 @@ export const ITEMS =      [
     id: '13',
     name: "Kono Coileder Godox Cable",
     price: 10.00,
-    productImg: cable
+    productImg: cable,
+    type: "accessories",
+
 
 },
 { 
     id: '14',
     name: "Kono Coiled Aviator Cable",
     price: 10.00,
-    productImg: cable2
+    productImg: cable2,
+    type: "accessories",
 
 },
 { 
     id: '15',
     name: "Sushi Mat",
     price: 10.00,
-    productImg: sushimat
+    productImg: sushimat,
+    type: "mousemat",
 
 },
 { 
     id: '16',
     name: "Discord TKL Keyboard",
     price: 10.00,
-    productImg: disc
+    productImg: disc,
+    type: "keyboards",
 
 },
 { 
@@ -147,7 +160,7 @@ export const ITEMS =      [
     name: "4",
     price: 10.00,
     productImg: penguin,
-    type: "99",
+    type: "keycaps",
 
 
 },
@@ -155,7 +168,8 @@ export const ITEMS =      [
     id: '18',
     name: "4",
     price: 10.00,
-    productImg: starwars
+    productImg: starwars,
+    type: "keyboards",
 
 },
 

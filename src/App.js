@@ -16,7 +16,10 @@ import Basket from './pages/Basket';
 import { StoreContextProvider } from './context/StoreContext';
 import Build from './pages/Build';
 import { Single } from './Single';
-import Keycaps from './pages/Keycaps';
+import Filter from './pages/Filter';
+import Mousemat from './pages/Mousemat';
+import Keyboards from './pages/Keyboards';
+import Accessories from './pages/Accessories';
 function App() {
   
 
@@ -41,7 +44,13 @@ function App() {
       <Route path='Test2' element = {<Single />} />
       <Route path="Specificproduct/:id" element = {<Specificproduct/>}/>
       <Route path="Specificproduct/:type" element = {<Specificproduct/>}/>
-      <Route path="Keycaps/:type" element = {<Keycaps/>}/>
+      <Route path="Filter/:type" element = {<Filter/>}/>
+      <Route path ="Store/:type" element = {<Store />} />
+      <Route path ="Keyboards:type" element = {<Keyboards />} />
+      <Route path ="Mousemat:type" element = {<Mousemat />} />
+      <Route path ="Accessories:type" element = {<Accessories />} />
+
+
 
 
     

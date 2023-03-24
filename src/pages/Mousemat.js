@@ -1,18 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import {ITEMS} from ".././item"
+import {ITEMS} from "../item"
 import { Product } from '../Product'
 import { useContext } from 'react';
 import { StoreContext } from '../context/StoreContext';
+import { useRoutes } from 'react-router-dom';
 
 import { useParams } from "react-router-dom";
      
-function Keycaps() {
-    
+
+
+
+function Mousemat() {
+
     const { addToBasket, basketItems } = useContext(StoreContext)
     const { id,type } = useParams();
 
-     const sitem = ITEMS.filter(product => product.type === type);
+     const sitem = ITEMS.filter(product => product.type === mousemat);
 
 
   return (
@@ -27,13 +31,48 @@ function Keycaps() {
               <h4 className='f-title'>  Shop by Categories
 </h4>
 
+<div class="list-group-item list-group-item-action"> 
+<Link to= {"/Filter/keycaps" }>
+  Keyboards  
+  </Link>
+  </div>
+  <div class="list-group-item list-group-item-action"> 
 
-  <a href="" class="list-group-item list-group-item-action">Keyboards</a>
-  <a href="" class="list-group-item list-group-item-action">Keycaps</a>
-  <a href="" class="list-group-item list-group-item-action">MouseMats</a>
-  <a href="" class="list-group-item list-group-item-action disabled">Switches</a>
-  <a href="" class="list-group-item list-group-item-action disabled">PCB</a>
-  <a href="" class="list-group-item list-group-item-action disabled">Accesories</a>
+  <Link to="/Filter/keycaps">
+  Keycaps 
+  </Link>
+  </div>
+
+  <div class="list-group-item list-group-item-action"> 
+
+  <Link to="/Filter/mousemat">
+
+   MouseMats 
+  </Link>
+  </div>
+
+  <div class="list-group-item list-group-item-action"> 
+
+<Link to="/Filter/switches">
+
+switches
+</Link>
+</div>
+<div class="list-group-item list-group-item-action"> 
+
+  <Link to="/Filter/pcb">
+
+ PCB
+  </Link>
+  </div>
+  
+  <div class="list-group-item list-group-item-action"> 
+
+  <Link to="/Filter/accessories">
+
+   Accessories  
+  </Link>
+  </div>
 
 </div>
             </div>
@@ -149,4 +188,4 @@ function Keycaps() {
   )
 }
 
-export default Keycaps;
+export default Mousemat;

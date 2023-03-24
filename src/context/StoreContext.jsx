@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { ITEMS } from '../item';
 import { createContext } from 'react';
-
+import { useEffect } from 'react';
 
 export const StoreContext = createContext(null);
 
@@ -15,10 +15,22 @@ const getDefCart = () => {
 };
 
 
+
 export const StoreContextProvider = (props) => {
   const [basketItems, setBasketItems,] = useState(getDefCart());
   console.log("from store context", basketItems);
+  
+  useEffect (() => {
+    const data = localStorage.getItem("basketItems");
+    if (data) {
+      setBasketItems(JSON.parse(data));
+    }
+  }, []);
 
+
+  useEffect(() => {
+    localStorage.setItem("basketItems", JSON.stringify(basketItems));
+   });
   const totalBasketPrice = () => {
     let totalPrice = 0;
     for (const item in basketItems) {
@@ -29,6 +41,8 @@ export const StoreContextProvider = (props) => {
     }
     return totalPrice;
   };
+   
+  
 
   // adding the card items into a new array 
   const findCardItems = () => {

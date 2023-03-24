@@ -1,13 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import {ITEMS} from ".././item"
+import {ITEMS} from "../item"
 import { Product } from '../Product'
+import { useContext } from 'react';
+import { StoreContext } from '../context/StoreContext';
+import { useRoutes } from 'react-router-dom';
 
 import { useParams } from "react-router-dom";
      
 
-function Store() {
-  const { id,type, keycaps } = useParams();
+
+
+function Accessories() {
+
+    const { addToBasket, basketItems } = useContext(StoreContext)
+    const { id,type } = useParams();
+
+     const sitem = ITEMS.filter(product => product.type === type);
+
 
   return (
     <div className="product-wrapper home-wrapper-2 py-4"> 
@@ -20,12 +30,50 @@ function Store() {
               <div class="list-group-card">
               <h4 className='f-title'>  Shop by Categories
 </h4>
-<a href="Filter/keyboards" class="list-group-item list-group-item-action">Keyboards</a>
-  <a href= "Filter/keycaps" id class="list-group-item list-group-item-action">Keycaps</a>
-  <a href="Filter/mousemat" class="list-group-item list-group-item-action">MouseMats</a>
-  <a href="Filter/switches" class="list-group-item list-group-item-action disabled">Switches</a>
-  <a href="Filter/PCB" class="list-group-item list-group-item-action disabled">PCB</a>
-  <a href="Filter/accessories" class="list-group-item list-group-item-action disabled">Accesories</a>
+
+<div class="list-group-item list-group-item-action"> 
+<Link to= {"/Filter/keycaps" }>
+  Keyboards  
+  </Link>
+  </div>
+  <div class="list-group-item list-group-item-action"> 
+
+  <Link to="/Filter/keycaps">
+  Keycaps 
+  </Link>
+  </div>
+
+  <div class="list-group-item list-group-item-action"> 
+
+  <Link to="/Filter/mousemat">
+
+   MouseMats 
+  </Link>
+  </div>
+
+  <div class="list-group-item list-group-item-action"> 
+
+<Link to="/Filter/switches">
+
+switches
+</Link>
+</div>
+<div class="list-group-item list-group-item-action"> 
+
+  <Link to="/Filter/pcb">
+
+ PCB
+  </Link>
+  </div>
+  
+  <div class="list-group-item list-group-item-action"> 
+
+  <Link to="/Filter/accessories">
+
+   Accessories  
+  </Link>
+  </div>
+
 </div>
             </div>
             <div className='filter-card mb-4'>
@@ -101,12 +149,34 @@ function Store() {
             </div>
             
             <div className='row'> 
+            {sitem.map(pr => (
 
-        {ITEMS.map((product) =>
-        <Product data={product}/>)}
+
+            <div class="col-smallstuff"
+             key={pr.type}>
+             <div className='small-banner1 position-relative'>
+             <img src={pr.productImg} className='img'
+             alt='small img'
+               />
+              <div className='small-title-name'>{pr.name}</div>
+              <div className='small-title'>£{pr.price}.00</div>
+              
+             
+              
+              <Link to={`/Specificproduct/`+ pr.id}>
+              <button className='addToCartBtn'>
+                View Item
+
+              </button>
+             </Link>
+            
+    </div>
+    </div>
+  ))}
+      
         </div>
-        
-            </div>
+     
+      </div>
             </div>
             </div>
             </div>
@@ -118,4 +188,4 @@ function Store() {
   )
 }
 
-export default Store;
+export default Accessories;

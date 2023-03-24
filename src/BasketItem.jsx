@@ -6,6 +6,8 @@ export const BasketItem = (props) => {
     const {id, name, price, productImg} = props.data;
     const { basketItems , addToBasket, removeItem} = useContext(StoreContext)
     
+
+   
     return <div className="basketItem">
         
         <img className = "checkoutImg"src={productImg} />
