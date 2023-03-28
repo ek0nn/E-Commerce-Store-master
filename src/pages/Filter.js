@@ -33,9 +33,9 @@ function Filter() {
 <a href="./keyboards" class="list-group-item list-group-item-action">Keyboards</a>
   <a href= "./keycaps" id class="list-group-item list-group-item-action">Keycaps</a>
   <a href= "./mousemat" class="list-group-item list-group-item-action">MouseMats</a>
-  <a href= "./switches" class="list-group-item list-group-item-action disabled">Switches</a>
-  <a href= "./PCB" class="list-group-item list-group-item-action disabled">PCB</a>
-  <a href= "./accessories" class="list-group-item list-group-item-action disabled">Accesories</a>
+  <a href= "./switches" class="list-group-item list-group-item-action ">Switches</a>
+  <a href= "./PCB" class="list-group-item list-group-item-action ">PCB</a>
+  <a href= "./accessories" class="list-group-item list-group-item-action ">Accesories</a>
 </div>
             </div>
             <div className='filter-card mb-4'>

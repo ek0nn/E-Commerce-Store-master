@@ -21,11 +21,11 @@ function Store() {
               <h4 className='f-title'>  Shop by Categories
 </h4>
 <a href="Filter/keyboards" class="list-group-item list-group-item-action">Keyboards</a>
-  <a href= "Filter/keycaps" id class="list-group-item list-group-item-action">Keycaps</a>
+  <a href= "Filter/keycaps" class="list-group-item list-group-item-action">Keycaps</a>
   <a href="Filter/mousemat" class="list-group-item list-group-item-action">MouseMats</a>
-  <a href="Filter/switches" class="list-group-item list-group-item-action disabled">Switches</a>
-  <a href="Filter/PCB" class="list-group-item list-group-item-action disabled">PCB</a>
-  <a href="Filter/accessories" class="list-group-item list-group-item-action disabled">Accesories</a>
+  <a href="Filter/switches" class="list-group-item list-group-item-action ">Switches</a>
+  <a href="Filter/PCB" class="list-group-item list-group-item-action ">PCB</a>
+  <a href="Filter/accessories" class="list-group-item list-group-item-action ">Accesories</a>
 </div>
             </div>
             <div className='filter-card mb-4'>

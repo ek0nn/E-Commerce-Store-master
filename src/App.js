@@ -20,6 +20,8 @@ import Filter from './pages/Filter';
 import Mousemat from './pages/Mousemat';
 import Keyboards from './pages/Keyboards';
 import Accessories from './pages/Accessories';
+import Upload from './pages/Upload';
+import Community from './pages/Community';
 function App() {
   
 
@@ -49,6 +51,9 @@ function App() {
       <Route path ="Keyboards:type" element = {<Keyboards />} />
       <Route path ="Mousemat:type" element = {<Mousemat />} />
       <Route path ="Accessories:type" element = {<Accessories />} />
+      <Route path ="upload" element = {<Upload />} />
+      <Route path ="Community" element = {<Community />} />
+
 
 
 

@@ -1,13 +1,23 @@
-
 const express = require("express")
 const collection = require('./loginDetails')
 const collection1 = require('./database')
+const collection2 = require("./community")
 const cors = require("cors")
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 
+const mongoose = require ("mongoose")
+mongoose.connect("mongodb+srv://ekon1:1234@cluster0.3ereih1.mongodb.net/?retryWrites=true&w=majority")
+.then(()=>{
+  console.log("mongoosedb connected");
+})
+.catch(()=> {
+  console.log("error failed connection");
+})
+
+const communityImg=mongoose.model("Community")
 app.get('/signin', cors(), (req, res) => {
 })
 
@@ -88,7 +98,29 @@ app.post("/Checkout", async (req, res) => {
 })
 
 
+app.post("/upload", async(req,res) => {
+  const {b64, firstname,surname,email,number} = req.body;
+  try {
+    await communityImg.create({image:b64,firstname:firstname,surname:surname,email:email,number:number });
+    req.send({Status: "working"})
+  } catch (error) {
+    res.send({Status: "error", data:error});
+
+  }
+})
+
+
+app.get("/getCom", async (req,res) => {
+  try {
+    await communityImg.find({}).then(data => {
+      res.send({status: "ok", data: data})
+    })
+  } catch (error) {
+
+  }
+})
 
 app.listen(4000, () => {
   console.log("port con");
 })
+
