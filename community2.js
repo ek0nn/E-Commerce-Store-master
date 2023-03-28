@@ -8,12 +8,9 @@ mongoose.connect("mongodb+srv://ekon1:1234@cluster0.3ereih1.mongodb.net/?retryWr
 })
 
 
-const CommunitySchema = new mongoose.Schema({
+const Community3Schema = new mongoose.Schema({
 
-image:{
-  type:String,
-  required: false
-},
+
 firstname:{
   type:String,
   required: false
@@ -33,5 +30,5 @@ number:{
 
 })
 
-const collection2 = mongoose.model("Community", CommunitySchema)
-module.exports=collection2
+const collection3 = mongoose.model("Community3", Community3Schema)
+module.exports=collection3

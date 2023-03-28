@@ -22,6 +22,7 @@ import Keyboards from './pages/Keyboards';
 import Accessories from './pages/Accessories';
 import Upload from './pages/Upload';
 import Community from './pages/Community';
+import Upload2 from './pages/Upload2';
 function App() {
   
 
@@ -52,6 +53,8 @@ function App() {
       <Route path ="Mousemat:type" element = {<Mousemat />} />
       <Route path ="Accessories:type" element = {<Accessories />} />
       <Route path ="upload" element = {<Upload />} />
+      <Route path ="upload2" element = {<Upload2 />} />
+
       <Route path ="Community" element = {<Community />} />
 
 

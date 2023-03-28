@@ -1,6 +1,7 @@
 
 
 import React, { useState } from 'react'
+import Upload2 from './Upload2';
 
 function Upload() {
  
@@ -35,7 +36,7 @@ function submitB() {
 }
   return (
     <div className='container-xxl upload'>Upload
-  
+  <Upload2> </Upload2>
   <input 
     accept='image/*'
     type="file"

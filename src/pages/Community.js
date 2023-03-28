@@ -26,7 +26,8 @@ function Community() {
         return(
           <div> 
             <img width={100} height={100} src={data.image} />
-       
+            <h1> {data.firstname} </h1>
+        
 
 
 

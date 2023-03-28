@@ -2,6 +2,8 @@ const express = require("express")
 const collection = require('./loginDetails')
 const collection1 = require('./database')
 const collection2 = require("./community")
+const collection3 = require("./community2")
+
 const cors = require("cors")
 const app = express()
 app.use(express.json())
@@ -18,6 +20,8 @@ mongoose.connect("mongodb+srv://ekon1:1234@cluster0.3ereih1.mongodb.net/?retryWr
 })
 
 const communityImg=mongoose.model("Community")
+const communityImg2=mongoose.model("Community3")
+
 app.get('/signin', cors(), (req, res) => {
 })
 
@@ -96,12 +100,29 @@ app.post("/Checkout", async (req, res) => {
 
 
 })
+app.post("/upload2", async (req, res) => {
+  const { firstname, surname, number, email } = req.body
 
+
+  const data = {
+    firstname: firstname,
+    surname: surname,
+    email: email,
+    number: number,
+ 
+
+  }
+
+  await collection2.insertMany([data])
+
+
+
+})
 
 app.post("/upload", async(req,res) => {
-  const {b64, firstname,surname,email,number} = req.body;
+  const {b64} = req.body;
   try {
-    await communityImg.create({image:b64,firstname:firstname,surname:surname,email:email,number:number });
+    await communityImg.create({image:b64});
     req.send({Status: "working"})
   } catch (error) {
     res.send({Status: "error", data:error});
@@ -119,7 +140,15 @@ app.get("/getCom", async (req,res) => {
 
   }
 })
+app.get("/getCom", async (req,res) => {
+  try {
+    await communityImg2.find({}).then(data => {
+      res.send({status: "ok", data: data})
+    })
+  } catch (error) {
 
+  }
+})
 app.listen(4000, () => {
   console.log("port con");
 })
