@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 import { useState } from 'react';
 import axios from "axios";
@@ -17,6 +15,7 @@ async function submitB2(e) {
   e.preventDefault();
   try {
     await axios.post("http://localhost:4000/upload2", {
+      image,
       email,
       firstname,
       surname,
@@ -49,7 +48,6 @@ async function submitB2(e) {
 
 
         <div class="py-5 text-center">
-          <h2>Community</h2>
           <div className='row'>
             <div class="col-sm-6">
 
