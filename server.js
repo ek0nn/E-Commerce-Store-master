@@ -3,12 +3,14 @@ const collection = require('./loginDetails')
 const collection1 = require('./database')
 const collection2 = require("./community")
 const collection3 = require("./community2")
-
+require("dotenv").config()
 const cors = require("cors")
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
+
+const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY)
 
 const mongoose = require ("mongoose")
 mongoose.connect("mongodb+srv://ekon1:1234@cluster0.3ereih1.mongodb.net/?retryWrites=true&w=majority")
@@ -101,10 +103,11 @@ app.post("/Checkout", async (req, res) => {
 
 })
 app.post("/upload2", async (req, res) => {
-  const { firstname, surname, number, email } = req.body
+  const { firstname, surname, number, email, image } = req.body
 
 
   const data = {
+    image:image,
     firstname: firstname,
     surname: surname,
     email: email,
@@ -140,7 +143,7 @@ app.get("/getCom", async (req,res) => {
 
   }
 })
-app.get("/getCom", async (req,res) => {
+app.get("/getCom2", async (req,res) => {
   try {
     await communityImg2.find({}).then(data => {
       res.send({status: "ok", data: data})
@@ -152,4 +155,3 @@ app.get("/getCom", async (req,res) => {
 app.listen(4000, () => {
   console.log("port con");
 })
-

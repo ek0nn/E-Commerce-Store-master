@@ -22,18 +22,36 @@ function Community() {
 
   return (
     <div className='container-xxl'>Community
+      <div className='col-8'>
+          <div className='sort-grid'>
+          <div className='d-flex align-items-center '>
+
+          <div className='row'> 
     {allImg.map(data => {
         return(
-          <div> 
-            <img width={100} height={100} src={data.image} />
-            <h1> {data.firstname} </h1>
         
+            <div class="col-smallstuff">
 
+    <div className='small-banner1 position-relative'>
+    <img src={data.image} className='img'
+    alt={data.firstname} onError={(event) => event.target.removeAttribute('src')} 
+    />
+              
 
-
+            
+    </div>
+   
             </div>
+
+
         )
     })}
+     </div>
+     </div>
+     
+
+</div>
+</div>
     </div>
   )
 }

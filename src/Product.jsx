@@ -21,7 +21,7 @@ export const Product = (props) => {
     alt='small img'
     />
               <div className='small-title-name'>{name}</div>
-              <div className='small-title'>£{price}.00</div>
+              <div className='small-title'>£{price}</div>
               
              
               

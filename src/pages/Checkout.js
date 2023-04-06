@@ -1,15 +1,13 @@
 import React from 'react'
 import { StoreContext } from '../context/StoreContext';
-import { ITEMS } from '../item';
 import { useContext } from 'react';
-import { BasketItem } from '../BasketItem';
 import { useState } from 'react';
 import axios from "axios";
-import { useParams } from "react-router-dom";
-import { Fragment } from 'react';
-import Basket from './Basket';
+import { Link } from 'react-router-dom';
+
 
 const Checkout = () => {
+
 
   const { basketItems, totalBasketPrice, findCardItems } = useContext(StoreContext)
   const totalPrice = totalBasketPrice();
@@ -157,37 +155,15 @@ const Checkout = () => {
                 Please enter your town/city
               </div>
             </div>
+
             <button type="submit" onClick={submit}
-              class="btn44 btn-primary btn-lg btn-block">Submit</button>
-
-            <hr class="my-4" />
-            <div className='basketItems2'>
-              <h2 className='order-summary'>Order Summary</h2>
-
-
-
-
-
-
-              <h2 className='order-summary' >  Order summary
-                <div >
-                  <p className='subtotal'> </p>
-                </div>
-
-              </h2>
-              <p className='subtotal' onChange={(e) => {
-                setTp(e.target.defaultValue);
-              }}>Subtotal : £{totalPrice} </p>
-
-
+              class="btn44 btn-primary btn-lg btn-block">Checkout with stripe</button>
             </div>
-
           </div>
 
         </div>
 
 
-      </div>
 
 
     </form>

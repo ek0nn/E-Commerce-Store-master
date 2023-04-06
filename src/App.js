@@ -23,6 +23,9 @@ import Accessories from './pages/Accessories';
 import Upload from './pages/Upload';
 import Community from './pages/Community';
 import Upload2 from './pages/Upload2';
+import Blog from './pages/Blog';
+import Stripe2 from './stripe';
+import PayStripe from './pages/PayStripe';
 function App() {
   
 
@@ -32,9 +35,10 @@ function App() {
   <StoreContextProvider>
 <BrowserRouter>
 <Routes>
-      <Route path='login' element = {<Login/>}/>
-      <Route path='signup' element = {<Signup/>}/>
+      
 <Route path='/' element = {<Layout/>}>  
+<Route path='login' element = {<Login/>}/>
+      <Route path='signup' element = {<Signup/>}/>
 <Route index element ={<Home />} />
       <Route path ="about" element = {<About />}/>
       <Route path ="contact" element = {<Contact />}/>
@@ -54,11 +58,11 @@ function App() {
       <Route path ="Accessories:type" element = {<Accessories />} />
       <Route path ="upload" element = {<Upload />} />
       <Route path ="upload2" element = {<Upload2 />} />
+      <Route path='blog' element = {<Blog/>} />
 
       <Route path ="Community" element = {<Community />} />
-
-
-
+      <Route path = "payment" element = {<Stripe2 />} />
+      <Route path ="securepayment" element = {<PayStripe />} />
 
 
     

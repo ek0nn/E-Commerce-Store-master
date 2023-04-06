@@ -43,48 +43,36 @@ const Header = () => {
                   aria-label="Search for product here"
                   aria-describedby="basic-addon2"
                 />
+                <Link to="/store"> 
                 <span class="input-group-text p-3" id="basic-addon2">
                   <BsSearch className="fs-6" />
                 </span>
+                </Link>
               </div>
             </div>
             <div className="col-5">
-              <div className="header-upper-links d-flex align-items-right justify-content-between ">
+              <div className="header-upper-links d-flex align-items-right ">
+            
                 <div>
-                  <Link className="d-flex align-items-right gap-10 text-white float-end">
-                    <img
-                      className="header-icons"
-                      src="images/returns.png"
-                      alt="returns"
-                    />
-                    <p className="mb-0">
-                      Returns <br /> & Orders
-                    </p>
-                  </Link>
-                </div>
-                <div>
-                  <Link className="d-flex align-items-right gap-10 text-white float-end">
-                    <img className="header-icons" src="images/wishl.png" alt="wishlist" />
-                    <p className="mb-0">
+                  <Link className="d-flex align-items-right gap-10 text-white ">
+                    <img className="header-icons" src="images/user.png" alt="" />
+                    <p className="textacc">
                       {" "}
-                      My <br /> Wishlist
+                      Login <br /> 
                     </p>
                   </Link>
                 </div>
-                <div>
-                  <Link to = "/login"className="d-flex align-items-right gap-10 text-white float-end">
-                    <img className="header-icons" src="images/user.png" alt="user" />
-                    <p className="mb-0">
-                      Login <br /> My Account
-                    </p>
-                  </Link>
-                </div>
+               
                 <div>
                   <Link to="/Basket"
                   
-                   className="d-flex align-items-right gap-10 text-white float-end">
-                    <img className="header-icons" src="images/checkout.png" alt="checkout" />
+                   className="d-flex align-items-right gap-10 text-white ">
+                    Basket
+                    <img className="header-icons" src="images/checkout.png" alt="" />
+                    
                     <div className="d-flex flex-column">
+                    Total Price <br /> 
+
                       <span className="badge bg-white text-dark">£{totalPrice}</span>
                       <p className="mb-0"></p>
                     </div>

@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react'
 import Upload2 from './Upload2';
 
@@ -35,8 +33,11 @@ function submitB() {
  }).then((res) => res.json()).then((data) => console.log(data))
 }
   return (
-    <div className='container-xxl upload'>Upload
-  <Upload2> </Upload2>
+    <div className='container-xxl upload'>
+                <h2>Community</h2>
+
+      <div class="col-sm-6"> 
+  
   <input 
     accept='image/*'
     type="file"
@@ -44,8 +45,9 @@ function submitB() {
     >
     </input>
     {communityImg == "" || communityImg == null? "": <img width={100} height={100} src={communityImg}/>}
-    <button onClick={submitB}> Upload</button>
-    
+    <button onClick={submitB}> Confirm Image</button>
+    <Upload2> </Upload2>
+    </div>
     </div>
   )
 }

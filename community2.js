@@ -10,7 +10,10 @@ mongoose.connect("mongodb+srv://ekon1:1234@cluster0.3ereih1.mongodb.net/?retryWr
 
 const Community3Schema = new mongoose.Schema({
 
-
+  image:{
+    type:String,
+    required: false
+  },
 firstname:{
   type:String,
   required: false

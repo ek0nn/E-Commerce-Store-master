@@ -41,7 +41,9 @@ const Home = (props) => {
   </button>
 </div>
 <div class="container-fluid text-center h1 texticons9 ">
-Best Sellers</div>
+<p class ="testicons999"> Best Sellers </p>
+
+</div>
     <div className='container-xxl'>
 
       <div className='row'>
@@ -106,7 +108,9 @@ Best Sellers</div>
         </div>
     </div>
   <div class="container-fluid text-center h1 texticons9 ">
-New Arrivals</div>
+        <p class ="testicons999">  New Arrivals </p> 
+          
+  </div>
 
   <div class="container">
   <div class="row row-cols-4 w-5 p-3 sm ">
@@ -196,7 +200,9 @@ New Arrivals</div>
   
 </div>
 <div class="container-fluid text-center h1 texticons9 ">
-Our Promises</div>
+<p class ="testicons999"> Our promises </p>
+
+</div>
 <div className='container-xxl ccc'> 
     <div className = "row row-cols-4 w-5 p-3 sm "> 
 
@@ -245,7 +251,9 @@ Our Promises</div>
     </div>
 
 <div class="container-fluid text-center h1 texticons9 ">
-On Sale</div>
+<p class ="testicons999"> On sale </p>
+
+</div>
   <div class="container dda">
     
 <div class="row row-cols-4 w-5 p-3 sm ">
