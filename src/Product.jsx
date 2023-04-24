@@ -22,8 +22,8 @@ export const Product = (props) => {
     alt='small img'
     />
               <div className='small-title-name'>{name}</div>
-              <div className='small-title'>£{price}</div>
-              <div className='small-title'>{rev}</div>
+              <div className='small-title1'>£{price}</div>
+              <div className='small-title1'>{rev}</div>
 
               
              

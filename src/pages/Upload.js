@@ -33,7 +33,7 @@ function submitB() {
  }).then((res) => res.json()).then((data) => console.log(data))
 }
   return (
-    <div className='container-xxl upload'>
+    <div className='container-xxl upload dsad2s11'>
                 <h2>Community</h2>
 
       <div class="col-sm-6"> 
@@ -46,7 +46,7 @@ function submitB() {
     </input>
     {communityImg == "" || communityImg == null? "": <img width={100} height={100} src={communityImg}/>}
     <button onClick={submitB}> Confirm Image</button>
-    <Upload2> </Upload2>
+    <button className='btn-primary' href = "./Community"> View community</button>
     </div>
     </div>
   )

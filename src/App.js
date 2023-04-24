@@ -31,6 +31,9 @@ import Article1 from './pages/Article1';
 import Article2 from './pages/Article2';
 import Article3 from './pages/Article3';
 import Article4 from './pages/Article4';
+import Article5 from './pages/Article5'
+import Article6 from './pages/Article6'
+
 function App() {
   
 
@@ -73,6 +76,9 @@ function App() {
       <Route path ="Article2" element = {<Article2 />} />
       <Route path ="Article3" element = {<Article3 />} />
       <Route path ="Article4" element = {<Article4 />} />
+      <Route path ="Article5" element = {<Article5 />} />
+      <Route path ="Article6" element = {<Article6 />} />
+
 
 
 

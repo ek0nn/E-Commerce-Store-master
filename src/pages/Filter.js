@@ -105,10 +105,9 @@ function Filter() {
       </Dropdown.Toggle>
 
       <Dropdown.Menu >
-        <Dropdown.Item href="">Featured Products</Dropdown.Item>
+        <Dropdown.Item href="./ft">Featured Products</Dropdown.Item>
         <Dropdown.Item href="./best">Best Selling</Dropdown.Item>
-        <Dropdown.Item href="./best">Price, low to high</Dropdown.Item>
-        <Dropdown.Item href="./best">Price, high to low</Dropdown.Item>
+        <Dropdown.Item href="./fav">Our Favorites</Dropdown.Item>
  
       </Dropdown.Menu>
     </Dropdown>
@@ -128,8 +127,9 @@ function Filter() {
              alt='small img'
                />
               <div className='small-title-name'>{pr.name}</div>
-              <div className='small-title'>£{pr.price}.00</div>
-              
+              <div className='small-title1'>£{pr.price}.00</div>
+              <div className='small-title1'>{pr.rev}</div>
+
              
               
               <Link to={`/Specificproduct/`+ pr.id}>

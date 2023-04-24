@@ -117,23 +117,26 @@ const Home = (props) => {
     <div class="col-smallstuff2">
     <div className='d-flex flex-wrap justify-content-between align-items-center'>
           <div className='small-banner1 position-relative'>
+            <Link to ="/Specificproduct/51" > 
           <img src="images/starwars.png" className='img'
           alt='small img'
           />
                     <div className='small-title'>Limited Edition Starwars Keyboard</div>
-
+                    </Link>
           </div>
           </div>
       </div>
 
     <div class="col-smallstuff2">
           <div className='small-banner1 position-relative'>
+          <Link to ="/Specificproduct/55" > 
+
           <img src="images/NK87.png" className='img'
           alt='small img'
           />
-                    <div className='small-title'>Matt Black Keyboard</div>
+                    <div className='small-title'>Midnight Black Keyboard</div>
 
-          </div>
+                    </Link></div>
           </div>
 
 
@@ -148,34 +151,42 @@ const Home = (props) => {
           </div>
           <div class="col-smallstuff2">
           <div className='small-banner1 position-relative'>
+            <Link to = "/Specificproduct/54" > 
           <img src="images/4switches.png" className='img'
           alt='small img'
           />
                     <div className='small-title'>MX4 Switches</div>
-
+           </Link>
           </div>
           
           </div>
           <div class="col-smallstuff2">
+          <Link to = "/Specificproduct/54" > 
+
           <div className='small-banner1 position-relative'>
           <img src="images/mousepad2.png" className='img'
           alt='small img'
           />
                     <div className='small-title'>Aztec Mousepad</div>
-
+       
           </div>
-          
+          </Link>
           </div>
           <div class="col-smallstuff2">
           <div className='small-banner1 position-relative'>
+          <Link to = "/Specificproduct/26" > 
+
           <img src="images/astro.jpg" className='img'
           alt='small img'
           />
           <div className='small-title'>Glossy White PCB</div>
+          </Link>
           </div>
           
           </div>
           <div class="col-smallstuff2">
+          <Link to = "/Specificproduct/17" > 
+
           <div className='small-banner1 position-relative'>
           <img src="images/yHh9rNQvqxCDYr7eqOJg_pc.jpg" className='img'
           alt='small img'
@@ -183,15 +194,16 @@ const Home = (props) => {
                     <div className='small-title'>Penguin Switches</div>
 
           </div>
-          
+          </Link>
           </div>
           <div class="col-smallstuff2">
           <div className='small-banner1 position-relative'>
+          <Link to = "/Specificproduct/52" > 
           <img src="images/lotr.png" className='img'
           alt='small img'
           />
                     <div className='small-title'>Lord Of The Rings </div>
-
+                    </Link>
           </div>
           
           </div>

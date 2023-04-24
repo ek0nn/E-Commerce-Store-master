@@ -9,6 +9,7 @@ import { useParams } from "react-router-dom";
 
 function Store() {
   const { id,type, keycaps } = useParams();
+  
 
   return (
     <div className="product-wrapper home-wrapper-2 aa22"> 
@@ -106,10 +107,10 @@ function Store() {
       </Dropdown.Toggle>
 
       <Dropdown.Menu >
-        <Dropdown.Item href="">Featured Products</Dropdown.Item>
+        <Dropdown.Item href="./Filter/ft">Featured Products</Dropdown.Item>
         <Dropdown.Item href="./Filter/best">Best Selling</Dropdown.Item>
-        <Dropdown.Item href="./Filter/best">Price, low to high</Dropdown.Item>
-        <Dropdown.Item href="./Filter/best">Price, high to low</Dropdown.Item>
+        <Dropdown.Item href="./Filter/fav">Our Favorites</Dropdown.Item>
+
  
       </Dropdown.Menu>
     </Dropdown>

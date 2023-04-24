@@ -138,6 +138,8 @@ const Header = () => {
                     <NavLink className='text-white' to="/buildprocess">Build Process</NavLink>
                     <NavLink className='text-white' to="/blog">Blog</NavLink>
                     <NavLink className='text-white' to="/contact">Contact</NavLink>
+                    <NavLink className='text-white' to="/upload">Community</NavLink>
+
 
                     
                   </div>

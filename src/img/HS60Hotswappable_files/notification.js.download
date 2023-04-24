@@ -1,0 +1,59 @@
+(()=>{var R=90;var x="sacode",I="saref",m="saetc";var E="sa_redirect";var O="group",w="sa-target-group";var y=4;var P=60*60*24*7;var V=`
+    <svg viewBox="0 0 20 20" focusable="false" aria-hidden="true">
+        <path d="M11.414 10l6.293-6.293a.999.999 0 1 0-1.414-1.414L10 8.586 3.707 2.293a.999.999 0 1 0-1.414 1.414L8.586 10l-6.293 6.293a.999.999 0 1 0 1.414 1.414L10 11.414l6.293 6.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L11.414 10z" fill-rule="evenodd" fill="white">
+        </path>
+    </svg>
+`,W="233D1D",$="DE3618",Q="5C6AC4",X="866E3B";function j(n,e){return`
+    <style>
+        #sa-toast {
+            background: #${e};
+            color: white;
+            position: fixed;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, -30px);
+            /*bottom: 30px;*/
+            font-size: 20px;
+            padding: 16px 40px 16px 16px;
+            z-index: 9999999999;
+            animation: slide-up 0.4s ease;
+        }
+        .closing {
+            transform: translate(-50%, 70px)!important;
+            animation: slide-down 0.2s ease!important;
+        }
+        #sa-toast > svg {
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            margin-top: -10px;
+            cursor: pointer;
+        }
+        @keyframes slide-up {
+            0% {
+                opacity: 0;
+                transform: translate(-50%, 70px);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(-50%, -30px);
+            }
+        }
+        @keyframes slide-down {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -30px);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(-50%, 70px);
+            }
+        }
+    </style>
+    <div id="sa-toast">
+        ${n} 
+        ${V}
+    </div>`}function J(n){switch(n){case"success":return W;case"info":return Q;case"error":return $;case"warning":return X}}function C(n,e){let t=document.createElement("div");t.innerHTML=j(n,J(e)),document.body.appendChild(t);let r=document.getElementById("sa-toast");t.addEventListener("click",()=>{document.body.removeChild(t),setTimeout(()=>{document.body.removeChild(t)},300)}),setTimeout(()=>{r.classList.add("closing"),setTimeout(()=>{document.body.removeChild(t)},300)},6e4)}function D(){try{return document.cookie??null}catch{return null}}function d(n){try{return document.cookie=n,!0}catch{return!1}}function A(n){try{let e=n?window.sessionStorage:window.localStorage,t="__storage_test__";return e.setItem(t,t),e.removeItem(t),e}catch{return null}}var z=/; */,g=/^[\u0009\u0020-\u007e\u0080-\u00ff]+$/;function Z(n){try{return decodeURIComponent(n)}catch{return n}}function b(n){let e={},t=n.split(z);for(let r of t){let o=r.indexOf("=");if(o<0)continue;let s=r.substr(0,o).trim(),i=r.substr(++o,r.length).trim();i[0]=='"'&&(i=i.slice(1,-1)),e.hasOwnProperty(s)||(e[s]=Z(i))}return e}function f(n,e,t){let{maxAge:r=null,sameSite:o}=t;if(!g.test(n))throw new TypeError("argument name is invalid");let s=encodeURIComponent(e);if(s&&!g.test(s))throw new TypeError("argument val is invalid");let i=n+"="+s;if(r!==null){if(isNaN(r))throw new Error("maxAge should be a Number");i+="; Max-Age="+Math.floor(r)}if(t.domain){if(!g.test(t.domain))throw new TypeError("option domain is invalid");i+="; Domain="+t.domain}if(t.path){if(!g.test(t.path))throw new TypeError("option path is invalid");i+="; Path="+t.path}if(t.expires&&(i+="; Expires="+t.expires.toUTCString()),t.httpOnly&&(i+="; HttpOnly"),t.secure&&(i+="; Secure"),t.sameSite)switch(o){case!0:i+="; SameSite=Strict";break;case"lax":i+="; SameSite=Lax";break;case"strict":i+="; SameSite=Strict";break;default:throw new TypeError("option sameSite is invalid")}return i}function ee(n){return Math.floor(n/1e3)}function M(n){return new Date(n*1e3)}function N(){return ee(Date.now())}function L(n){return n*24*60*60}function k(n){let t=b(n)[m];if(t===void 0)return null;let r=t.match(/([A-Za-z0-9]+)_([0-9]+)/);if(r===null)return null;let o=r[1],s=new Date(parseInt(r[2]));return{sacode:o,iat:s}}function v(n,e){return d(f(m,`${e}_${n.getTime()}`,{maxAge:P,path:"/"}))}function h(){return d(f(m,"",{expires:new Date(0),path:"/"}))}function U(n,e){let r=JSON.stringify({sacode:n,token:e}),o="/",s=N()+L(R),i=M(s);return d(f(I,r,{expires:i,path:o}))}function F(){return(n,e)=>new Promise((t,r)=>{let o=new XMLHttpRequest;o.open("POST",n,!0);let s=()=>{if(o.readyState!==4){r(new Error(`Unexpected XMLHttpRequest readyState: ${o.readyState}`));return}if(o.status===200){let i=JSON.parse(o.responseText);t({success:!0,data:i});return}t({success:!1,status:o.status,headers:o.getAllResponseHeaders()})};o.onload=s,o.onerror=s,o.send(JSON.stringify(e))})}var a=class{constructor(e){this.rng=e}randomFloat(){return this.rng()}randomDigits10(){return Math.floor(this.randomFloat()*1e10).toString().padStart(10,"0")}static createRealRNG(){return new a(Math.random)}static createFakeRNG(){let e=BigInt(1),t=2147483647,r=e;return new a(()=>(r=r*48271n%BigInt(t),Number(r)/t))}};var G="SA_CONFIG";function ne(n){let e=0,t=n.length,r=0;if(t>0)for(;r<t;)e=(e<<5)-e+n.charCodeAt(r++)|0;return e}function H(n){return Math.abs(ne(n)).toString().slice(0,6)}var re="ERROR_CONTEXT_ANNOTATION",c=class{constructor(e){this.handler=e}log(e){this.handler(e)}logMessage(...e){this.log({level:"info",message:e.join(" ")})}logWarning(...e){this.log({level:"warning",message:e.join(" ")})}logError(e,t){let r=H(e.stack??e.name??"");this.log({level:"error",error:{id:r,source:t,name:e.constructor?.name,message:e.message,stack:e.stack,...e[re]??{}}})}withContext(e){return new c(t=>this.handler({...e,...t}))}runSync(e){try{return e()}catch(t){this.logError(t,"caught")}}async runAsync(e){try{return await e()}catch(t){this.logError(t,"caught")}}runAsyncBackground(e){this.runAsync(e).then()}wrapSync(e){return(...t)=>{try{return e(...t)}catch(r){throw this.logError(r,"caught"),r}}}wrapAsync(e){return async(...t)=>{try{return await e(...t)}catch(r){throw this.logError(r,"caught"),r}}}wrapPromise(e){return(async()=>{try{return await e}catch(r){this.logError(r,"caught")}})()}async*wrapAsyncGenerator(e){try{yield*e}catch(t){this.logError(t,"caught")}}};var _=class{constructor(e,t,r){this.rng=e,this.client=t,this.config=r,this.endpoint=`${r.baseUrl}/${"rpc"}`,this.logger=new c(o=>t(this.endpoint,{endpoint:"log",token:"",version:0,buildVersion:r.buildVersion,requestId:this.generateReqId(),params:[o]}))}generateReqId(){return`sarpc${this.rng.randomDigits10()}`}async call(e){let t=this.generateReqId(),r=await this.client(this.endpoint,{...e,buildVersion:this.config.buildVersion,requestId:t});return r.success||this.logger.log({level:"warning",errorReqId:t,failedRpcStatus:r.status,failedRpcHeaders:r.headers,message:`failed RPC request: ${t}`}),r}};function Y(){return window?.meta?.page?.customerId?.toString()}function B(){return new Promise((n,e)=>{window.Shopify.loadFeatures([{name:"consent-tracking-api",version:"0.1"}],async t=>{t?e(t):window.Shopify.customerPrivacy.userCanBeTracked()?n():document.addEventListener("trackingConsentAccepted",()=>n())})})}function l(n){return new URLSearchParams(window.location.search).get(n)}var S="sa-redirect",T="sa-redirect-backup";async function K(n,e,t){let r=Y(),o=await n.call({endpoint:"link",token:"",version:y,loggedInCustomerId:r,sacode:e,loadedAt:t.toISOString(),userAgent:navigator.userAgent,params:null});o.success&&(o.data.toast!==void 0&&C(o.data.toast.message,o.data.toast.color),o.data.token!==void 0&&U(e,o.data.token))}async function oe(n){let e=D();if(e===null)return;let t=l(x),r=new Date;if(t!==null)v(r,t),await K(n,t,r),h();else{let o=k(e);o!==null&&(await K(n,o.sacode,o.iat),h())}}async function ie(){let n=A(!0);if(n===null)return;let e=n.getItem(T);e!==null&&window.location.pathname!=="/challenge"&&window.location.pathname!=="/account/login"&&window.location.pathname!=="/account/register"&&l(E)===null&&(n.removeItem(T),window.location.href=e);let t=l(E);t!==null&&n.setItem(S,t);let r=n.getItem(S);if(r===null)return;if(window.location.pathname!=="/account/register"&&!window.location.pathname.includes("/account/activate")&&window.location.pathname!=="/challenge"){n.removeItem(S);return}let o=document.querySelector('form[action$="/account"][method="post"]'),s=document.querySelector('form[action$="/account/activate"][method="post"]');if(o===null&&s===null)return;let i=document.querySelector('form[action$="/account"][method="post"] script'),q=document.getElementById("g-recaptcha");if(i&&!q){n.setItem(T,r);return}let u=document.createElement("input");if(u.type="hidden",u.name="return_to",u.value=r,o&&o.appendChild(u),s){let p=document.createElement("input");p.type="hidden",p.name="customer[send_email_welcome]",p.value="false",s.appendChild(u),s.appendChild(p),console.log("activation form inject")}}function se(){let n=l(O);if(n!==null){let e=A(!0);e!==null&&e.setItem(w,n)}}async function ae(){let n="SA_NOTIFICATION_JS_LOADED";if(window[n])return;window[n]=!0;let e=a.createRealRNG(),t=new _(e,F(),window[G]);t.logger.runAsyncBackground(()=>ie()),await B(),t.logger.runAsyncBackground(()=>oe(t)),t.logger.runSync(se)}setTimeout(ae,0);})();
+;window.SA_CONFIG={"baseUrl":"https://app.simple-affiliate.com","buildVersion":"fa3076cadbc7047073e10ff6ea7c0c07b909c7500b5c49b10c7de7dfb25fc7d4"};

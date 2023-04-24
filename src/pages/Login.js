@@ -27,7 +27,7 @@ const Login = () => {
             history("/",{state:{id:email}} )
           }
           else if(res.data =="newuser"){
-            alert("You are not logged in")
+            alert("You have entered an incorrect password and email combination")
           }
          })
 

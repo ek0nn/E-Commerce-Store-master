@@ -1,0 +1,32 @@
+.elspw-modal .remodal-close{right:0;left:initial}.elspw-content{font-size:1.1em}.elspw-content button{margin:0 5px; width: auto;}.elspw-modal{border-radius:3px}@media only screen and (min-width:641px){.elspw-modal{max-width:600px}}
+.message-with-icon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.message-with-icon__message{
+  flex-grow: 1;
+}
+
+.message-with-icon__icon img {
+  width: 80px;
+}
+.message-with-icon--top, .message-with-icon--bottom {
+  flex-direction: column;
+  align-items: center;
+}
+.message-with-icon--right .message-with-icon__icon, .message-with-icon--bottom .message-with-icon__icon {
+  order: 2;
+}
+.message-with-icon--right .message-with-icon__message, .message-with-icon--bottom .message-with-icon__message {
+  order: 1;
+}
+
+.elspw-box{
+  padding: 20px;
+}
+
+.elspw-modal .remodal-close { display: none; }
+.elspw-modal.remodal-is-opened .remodal-close { display: block; }
