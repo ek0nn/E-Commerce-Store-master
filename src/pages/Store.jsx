@@ -30,46 +30,7 @@ function Store() {
   <a href="Filter/accessories" class="list-group-item list-group-item-action ">Accesories</a>
 </div>
             </div>
-            <div className='filter-card mb-4'>
-            <div class="list-group-card">
-            <h4 className='f-title'>Filter</h4>
-            <div>
-              <h5 className='filter-title2'>Availabity</h5>
-              <div  class="list-group-item list-group-item-action">
-              <div className='form-check'>
-                <input
-                className='form-check-input'
-                type="checkbox"
-                value="In stock"
-                id=""
-                />
-                <label className='form-check-label' for ="">
-                  Show all
-                </label>
-                
-              </div>
-                       
-            <div className='form-check'>
-                <input
-                className='form-check-input'
-                type="checkbox"
-                value="In stock"
-                id=""
-                />
-                <label className='form-check-label' for ="">
-                  In Stock
-                </label>
-                
-              </div>
-              </div>
-
-             
-              
-            </div>
-   
-              
-            </div>
-            </div>
+           
 
             <div className='filter-card mb-4'>
             <div class="list-group-card">
@@ -77,9 +38,9 @@ function Store() {
 </h4>
 
 
-  <a href="" class="list-group-item list-group-item-action">Linear</a>
-  <a href="" class="list-group-item list-group-item-action">Clicky</a>
-  <a href="" class="list-group-item list-group-item-action">Tactile</a>
+  <a href="Filter/Linear" class="list-group-item list-group-item-action">Linear</a>
+  <a href="Filter/Clicky" class="list-group-item list-group-item-action">Clicky</a>
+  <a href="Filter/tactile" class="list-group-item list-group-item-action">Tactile</a>
     
         </div>
         </div>
@@ -89,8 +50,8 @@ function Store() {
 </h4>
 
 
-  <a href="" class="list-group-item list-group-item-action">Mechanical</a>
-  <a href="" class="list-group-item list-group-item-action">Mecha Membrane</a>
+  <a href="Filter/mech" class="list-group-item list-group-item-action">Mechanical</a>
+  <a href="Filter/memb" class="list-group-item list-group-item-action">Mecha Membrane</a>
     
         </div>
         </div>

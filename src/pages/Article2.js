@@ -12,7 +12,7 @@ function Article2() {
     <p className='textartricle44'> hich One is Right for You?</p>
     </div>
     <p className='textartricle'><b>Mohammed Sadhak</b> <br />April 2023 </p>
-    <div className='container-xxl'><img className= "container-xxl" src="images/cyberboard_r2_04.jpg"/></div>
+    <div className='container-xxl'><img className= "container-xxl" src="images/apple.jpg"/></div>
     <div className='container-sm small22'> 
             {/* The article text was generated with the help of chatGPT */ }
 

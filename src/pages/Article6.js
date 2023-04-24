@@ -12,8 +12,10 @@ function Article6() {
     <p className='textartricle44'> Why You Might Want to Ditch the Numpad</p>
     </div>
     <p className='textartricle'><b>Mohammed Sadhak</b> <br />April 2023 </p>
-    <div className='container-xxl'><img className= "container-xxl" src="images/cyberboard_r2_04.jpg"/></div>
+    <div className='container-xxl'><img className= "container-xxl" src="images/tkl.jpg"/></div>
     <div className='container-sm small22'> 
+            {/* The article text was generated with the help of chatGPT */ }
+
     <h5 className='articlehead'>The Advantages of a Tenkeyless Custom Keyboard: Why You Might Want to Ditch the Numpad </h5>
     <p className='articlepara'>Are you looking for a more compact and ergonomic keyboard? Then, you might want to consider building a tenkeyless (TKL) custom keyboard. A TKL keyboard is a keyboard without a numeric keypad, and it has several advantages over traditional full-sized keyboards. In this article, we'll explore the benefits of a TKL keyboard and why you might want to ditch the numpad.</p>
     <h5 className='articlehead'>More Desk Space</h5>

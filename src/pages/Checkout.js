@@ -149,7 +149,7 @@ const Checkout = () => {
             <hr class="my-4" />
             
             <Link to={`/securepayment`}>
-            <button class="btn44 btn-primary btn-lg btn-block" type="submit" onClick={submit}>Checkout with stripe</button>
+            <button class="addToCartBtn1111" type="submit" onClick={submit}>Checkout with stripe</button>
               </Link>
             </div>
           </div>

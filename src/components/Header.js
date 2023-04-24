@@ -21,7 +21,7 @@ const Header = () => {
               <p className="text-white mb-0">Welcome  </p>
             </div>
             <div className="col-6">
-              <p className="text-end text-white mb-0">Call us on: yes</p>
+              <p className="text-end text-white mb-0">Call us on: 07305677121</p>
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@ const Header = () => {
             
                 <div>
                   <Link to = "./login"className="d-flex align-items-right gap-10 text-white ">
-                    <img className="header-icons" src="images/user.png" alt="" />
+                    <img className="header-icons" src="http://localhost:3000/images/user.png" alt="" />
                     <p className="textacc">
                       {" "}
                       Login <br /> 
@@ -68,7 +68,7 @@ const Header = () => {
                   
                    className="d-flex align-items-right gap-10 text-white ">
                     
-                    <img className="header-icons" src="images/checkout.png" alt="" />
+                    <img className="header-icons" src="http://localhost:3000/images/checkout.png" alt="" />
                     
                     <div className="d-flex flex-column">
                     Total Price <br /> 
@@ -107,7 +107,7 @@ const Header = () => {
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     > 
-                    <img className= "menu-img"src="images/menu.png" alt="" />
+                    <img className= "menu-img"src="http://localhost:3000/images/menu.png" alt="" />
                       <span> Browse Categories</span>
                     </button>
                     <ul

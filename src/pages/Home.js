@@ -16,19 +16,25 @@ const Home = (props) => {
     
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/disckb.jpg" class="d-block w-100" alt="..."/>
+      <Link to= "./Specificproduct/16">
+      <img href = "./Specificproduct/16" src="images/disckb.jpg" class="d-block w-100" alt="..."/>
+      </Link>
     </div>
     <div class="carousel-item">
-      <img src="images/disckb.jpg" class="d-block w-100 " alt="..."/>
+    <Link to= "./Specificproduct/16">
+      <img href = "./Specificproduct/16" src="images/disckb.jpg" class="d-block w-100" alt="..."/>
+      </Link>
     </div>
     <div class="carousel-item">
-      <img src="images/disckb.jpg" class="d-block w-100 " alt="..."/>
+    <Link to= "./Specificproduct/16">
+      <img href = "./Specificproduct/16" src="images/disckb.jpg" class="d-block w-100" alt="..."/>
+      </Link>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -70,8 +76,8 @@ const Home = (props) => {
           />
           <div className='small-banner-content position-absolute'>
             <h6>Penguin Switches</h6>
-            <p>From £8.99 </p>
-            <Link to={`/Specificproduct/1`} className='button-small'>BUY NOW</Link>
+            <p>Only £30.00 </p>
+            <Link to={`/Specificproduct/17`} className='button-small'>BUY NOW</Link>
 
           </div>
           </div>
@@ -81,25 +87,26 @@ const Home = (props) => {
           />
           <div className='small-banner-content position-absolute'>
             <h6>Evil Keyboard</h6>
-            <p>From £120.00 </p>
+            <p>Only £120.00 </p>
+            <Link to={`/Specificproduct/37`} className='button-small'>BUY NOW</Link>
           </div>
           </div>
           <div className='small-banner position-relative p-3'>
           <img src="images/cyberboard.jpg" className='img-fluid rounded-2'
           alt='small img'
           />
-          <div className='small-banner-content position-absolute'>
-            <h6>Penguin Switches</h6>
+          <div className='small-banner-content77 position-absolute'>
+            <h6 class='text-black'>Penguin Switches</h6>
             <p>From £8.99 </p>
           </div>
           </div>
           <div className='small-banner position-relative p-3'>
-          <img src="images/GMKAmethyst.jpg" className='img-fluid rounded-2'
+          <img src="images/zambumon.jpg" className='img-fluid rounded-2'
           alt='small img'
           />
-          <div className='small-banner-content position-absolute'>
-            <h6>Penguin Switches</h6>
-            <p>From £8.99 </p>
+          <div className='small-banner-content77 position-absolute text-black'>
+            <h6 class='text-black'>Zambumon Legend keyboard</h6>
+            <p>From £120 </p>
           </div>
           </div>
           

@@ -12,7 +12,7 @@ function Article5() {
     <p className='textartricle44'> If you're spending hours typing away on your computer every day, you deserve a keyboard that works for you. </p>
     </div>
     <p className='textartricle'><b>Mohammed Sadhak</b> <br />April 2023 </p>
-    <div className='container-xxl'><img className= "container-xxl" src="images/cyberboard_r2_04.jpg"/></div>
+    <div className='container-xxl'><img className= "container-xxl" src="images/cus222.jpg"/></div>
     <div className='container-sm small22'> 
     <h5 className='articlehead'>Introduction </h5>
             {/* The article text was generated with the help of chatGPT */ }

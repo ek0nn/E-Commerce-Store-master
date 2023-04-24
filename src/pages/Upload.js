@@ -36,7 +36,7 @@ function submitB() {
     <div className='container-xxl upload dsad2s11'>
                 <h2>Community</h2>
 
-      <div class="col-sm-6"> 
+      <div class="col-sm-6 dispii2"> 
   
   <input 
     accept='image/*'
@@ -45,8 +45,8 @@ function submitB() {
     >
     </input>
     {communityImg == "" || communityImg == null? "": <img width={100} height={100} src={communityImg}/>}
-    <button onClick={submitB}> Confirm Image</button>
-    <button className='btn-primary' href = "./Community"> View community</button>
+    <button className = "addToCartBtn111" onClick={submitB}> Confirm Image</button>
+    <button className = "addToCartBtn111" href = "./Community"> View community</button>
     </div>
     </div>
   )

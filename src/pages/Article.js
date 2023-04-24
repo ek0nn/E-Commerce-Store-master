@@ -14,13 +14,14 @@ function Article() {
     <p className='textartricle'><b>Mohammed Sadhak</b> <br />April 2023 </p>
     <div className='container-xxl'><img className= "container-xxl" src="images/cyberboard_r2_04.jpg"/></div>
     <div className='container-sm small22'> 
+        {/* The article text was generated with the help of chatGPT */ }
     <h5 className='articlehead'>Mechanical Keyboards: The Ultimate Typing Experience ? </h5>
     <p className='articlepara'>Mechanical keyboards have been gaining popularity among computer users, gamers, and typists alike. These specialized input devices offer a different kind of tactile feedback, increased durability, and improved performance compared to their rubber dome counterparts. But what exactly is a mechanical keyboard and what sets it apart? This article will explain the fundamental aspects of mechanical keyboards, their benefits, and why you should consider making the switch.</p>
     <h5 className='articlehead'>Understanding Mechanical Keyboards: </h5>
     <p className='articlepara'> A mechanical keyboard uses individual mechanical switches for each key, providing a distinct tactile and audible feedback when pressed. This feedback allows for a more precise and satisfying typing experience compared to traditional rubber dome keyboards, which utilize a single rubber membrane to register key presses.</p>
     <h5 className='articlehead'>Types of Mechanical Switches:</h5>
     <p className='articlepara'>There are several types of mechanical switches, each providing a unique feel and performance. The three most common types are:
-
+  
 Linear switches: Smooth keystrokes with no tactile bump or click. These switches offer a consistent actuation force throughout the keystroke, making them popular among gamers.
 Tactile switches: Featuring a noticeable tactile bump at the actuation point, these switches provide more feedback for typists and are suitable for general use.
 Clicky switches: Similar to tactile switches, but with an added audible click, these switches are preferred by those who enjoy the classic sound of typewriters and satisfying feedback.</p>

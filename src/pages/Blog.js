@@ -31,7 +31,7 @@ function Blog() {
     <div class="col-md-8 sadda">
       <div class="card-body sadda">
         <h5 class="card-title sadda">Your Guide To Keyboard Switches</h5>
-        <p class="card-text sadda">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text sadda">Your guide to keyboard switches. Learn about the benefits and different type of switches</p>
         <Link to= "/Article1"> 
  
         <button className="btn-submit-checkout" type="submit">Learn more </button>
@@ -51,7 +51,7 @@ function Blog() {
     <div class="col-md-8 sadda" >
       <div class="card-body sadda ">
         <h5 class="card-title">Better Than an Apple Magic Keyboard?!?</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">Alternative Keyboard: Surpassing Apple's Magic Keyboard with Impressive Features and Performance</p>
         <Link to= "/Article2"> 
 
         <button className="btn-submit-checkout" type="submit">Learn more </button>
@@ -68,8 +68,8 @@ function Blog() {
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">Are Mechanical Keyboards Better?</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Unique and Inspiring Builds</h5>
+        <p class="card-text">Mechanical keyboards are generally considered better by enthusiasts for their tactile feedback, durability, and customization options.</p>
         <Link to= "/Article3"> 
 
         <button className="btn-submit-checkout" type="submit">Learn more </button>
@@ -95,7 +95,7 @@ function Blog() {
       <img src="images/artisan.jpg" class="card-img-top dsa2dw" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Soldering vs hot swappable</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">A soldered PCB requires you to manually solder each switch to the board using a soldering iron and solder wire. This process creates a permanent connection.</p>
         <Link to= "/Article4"> 
 
         <button className="btn-submit-checkout" type="submit">Learn more </button>
@@ -107,8 +107,8 @@ function Blog() {
     <div class="card">
       <img src="images/artisan2.jpg" class="card-img-top dsa2dw" alt="..."/>
       <div class="card-body">
-        <h5 class="card-title">The Benefits of Building Your Own Custom Keyboard</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">The Benefits of A Custom Keyboard</h5>
+        <p class="card-text">A custom keyboard allows for personalized design, better ergonomics, improved typing experience, and increased functionality through programmable keys.</p>
         <Link to= "/Article5"> 
 
 <button className="btn-submit-checkout" type="submit">Learn more </button>
@@ -120,8 +120,8 @@ function Blog() {
     <div class="card">
       <img src="images/artisan3.jpg" class="card-img-top dsa2dw" alt="..."/>
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Advantages of a Tenkeyless Custom Keyboard</h5>
+        <p class="card-text">TA tenkeyless custom keyboard offers greater portability, desk space efficiency, and ergonomic benefits due to a more compact layout.</p>
         <Link to= "/Article6"> 
 
         <button className="btn-submit-checkout" type="submit">Learn more </button>

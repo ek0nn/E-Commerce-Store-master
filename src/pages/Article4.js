@@ -12,7 +12,7 @@ function Article4() {
     <p className='textartricle44'> Which One is Right for Your Custom Keyboard Project?</p>
     </div>
     <p className='textartricle'><b>Mohammed Sadhak</b> <br />April 2023 </p>
-    <div className='container-xxl'><img className= "container-xxl" src="images/cyberboard_r2_04.jpg"/></div>
+    <div className='container-xxl'><img className= "container-xxl" src="images/solder.jpg"/></div>
     <div className='container-sm small22'> 
     <h5 className='articlehead'>Introduction </h5>
     <p className='articlepara'>Soldered PCBs</p>
