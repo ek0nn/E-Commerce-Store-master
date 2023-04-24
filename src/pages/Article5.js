@@ -15,6 +15,8 @@ function Article5() {
     <div className='container-xxl'><img className= "container-xxl" src="images/cyberboard_r2_04.jpg"/></div>
     <div className='container-sm small22'> 
     <h5 className='articlehead'>Introduction </h5>
+            {/* The article text was generated with the help of chatGPT */ }
+
     <p className='articlepara'>If you're spending hours typing away on your computer every day, you deserve a keyboard that works for you. While off-the-shelf keyboards may get the job done, they often lack the personalization and quality that many users crave. Building your own custom keyboard may seem like a daunting task, but the benefits are worth the effort. In this article, we'll explore the benefits of building your own custom keyboard and why it might be the right choice for you.</p>
     <h5 className='articlehead'>Personalisation</h5>
     <p className='articlepara'> One of the main benefits of building your own custom keyboard is the ability to personalize it. With off-the-shelf keyboards, you're limited to a certain set of switches, keycaps, and cases. When building your own keyboard, you can choose from a wide range of options to create a keyboard that suits your aesthetic preferences and typing style. For example, you might choose a set of keycaps with a certain color scheme or a specific type of switch that has a unique tactile feedback</p>

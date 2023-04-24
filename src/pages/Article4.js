@@ -16,6 +16,8 @@ function Article4() {
     <div className='container-sm small22'> 
     <h5 className='articlehead'>Introduction </h5>
     <p className='articlepara'>Soldered PCBs</p>
+            {/* The article text was generated with the help of chatGPT */ }
+
     <h5 className='articlehead'>A soldered PCB requires you to manually solder each switch to the board using a soldering iron and solder wire. This process creates a permanent connection between the switch and the PCB, ensuring stable keypresses and consistent performance.</h5>
     <p className='articlepara'> Advantages of Soldered PCBs</p>
     <h5 className='articlehead'>The Minimalist Dream</h5>

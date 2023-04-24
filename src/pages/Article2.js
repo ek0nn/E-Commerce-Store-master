@@ -14,6 +14,8 @@ function Article2() {
     <p className='textartricle'><b>Mohammed Sadhak</b> <br />April 2023 </p>
     <div className='container-xxl'><img className= "container-xxl" src="images/cyberboard_r2_04.jpg"/></div>
     <div className='container-sm small22'> 
+            {/* The article text was generated with the help of chatGPT */ }
+
     <h5 className='articlehead'>Custom Keyboards vs. Apple Magic Keyboard</h5>
     <p className='articlepara'>When it comes to finding the perfect keyboard, it's essential to consider factors such as comfort, typing experience, and functionality. Apple's Magic Keyboard has gained popularity for its sleek design and seamless integration with Apple devices. But how does it compare to custom-built keyboards that cater to individual preferences? In this article, we will explore the pros and cons of both custom keyboards and the Apple Magic Keyboard to help you make an informed decision.</p>
     <h5 className='articlehead'>Pros of the Apple Magic Keyboard</h5>

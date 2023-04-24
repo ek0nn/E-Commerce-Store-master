@@ -14,6 +14,8 @@ function Article1() {
     <p className='textartricle'><b>Mohammed Sadhak</b> <br />April 2023 </p>
     <div className='container-xxl'><img className= "container-xxl" src="images/cyberboard_r2_04.jpg"/></div>
     <div className='container-sm small22'> 
+            {/* The article text was generated with the help of chatGPT */ }
+
     <h5 className='articlehead'>Your Guide To Keyboard Switches: Understanding Types, Features, and Choosing the Right One for You </h5>
     <p className='articlepara'>In the world of keyboards, switches play a crucial role in determining your typing and gaming experience. With an overwhelming variety of options available, it's essential to understand the types, features, and benefits of different keyboard switches to make the best choice for your needs. In this guide, we will explore the different kinds of keyboard switches, their key features, and how to choose the perfect switch to elevate your typing experience.</p>
     <h5 className='articlehead'>Understanding Keyboard Switches: </h5>

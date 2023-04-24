@@ -14,6 +14,8 @@ function Article3() {
     <p className='textartricle'><b>Mohammed Sadhak</b> <br />April 2023 </p>
     <div className='container-xxl'><img className= "container-xxl" src="images/cyberboard_r2_04.jpg"/></div>
     <div className='container-sm small22'> 
+            {/* The article text was generated with the help of chatGPT */ }
+
     <h5 className='articlehead'>Unique and Inspiring Builds </h5>
     <p className='articlepara'>The world of custom keyboards offers endless possibilities for personalization, creativity, and self-expression. From intricate keycap designs to innovative layouts, the custom keyboard community never ceases to amaze with unique and inspiring builds. In this article, we will showcase the top 10 custom keyboard builds that demonstrate exceptional craftsmanship, aesthetics, and functionality.</p>
     <h5 className='articlehead'>The Wooden Masterpiece</h5>

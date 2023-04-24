@@ -37,6 +37,7 @@ import g from './img/4switches.png'
 import hh from './img/NK87.png'
 import i from './img/duckyblack (1).jpg'
 import j from "./img/lotr.png"
+        {/* The Description and specification text was generated with the help of chatGPT */ }
 
 export const ITEMS =      [
     {
@@ -71,7 +72,7 @@ export const ITEMS =      [
 },
 { 
     id: '3',
-    name: "Cherry MX Black",
+    name: "Cherry MX Black", 
     price: 10.00,
     productImg: blackmx,
     type: "switches" && "best",
@@ -268,7 +269,7 @@ export const ITEMS =      [
 { 
     id: '17',
     name: "Penguin keycaps",
-    price: 10.00,
+    price: 30.00,
     productImg: penguin,
     type: "keycaps",
     pDesc: "This model comes with a translucent case made with high-quality acrylic material. This form factor could be a good presence for RGB keyboard, lights could shine through the case but not too dazzling since the case is with a well matted texture. Extra set of ASA profile PBT keycaps are included as a gift, you have more choices of make your own tone of a pink keyboard",
@@ -538,7 +539,7 @@ sort:""
     { 
         id: '37',
         name: "GMK Evil dolch Keyboard",
-        price: 10.00,
+        price: 110.00,
         productImg: gmkevil,
         type: "best",
         pDesc: " Evil doesn't need to be complicated. Unfriendly neighborhood supervillains might disagree, but the cleanest and easiest plans tend to have great results. We think S3LQ's design is the epitome of that principle. Shadowy tones and dark, saturated reds support high contrast alpha legends — the yang within the yin. ",
@@ -636,7 +637,7 @@ sort:""
     { 
         id: '44',
         name: "Zambumon Legend keyboard",
-        price: 10.00,
+        price: 120.00,
         productImg: zab,
         type: "ft",
         pDesc: " Rep your favorite social platform with the Official Discord TKL keyboard. We partnered with Discord to create the perfect TKL for gamers and typists alike! Pick from Dark or Light themes paired with Discord's official blurple colorway. Customize the layout with numerous novelties, and take it to the next keeb meetup with the matching EVA carrying case.",
