@@ -168,7 +168,7 @@ const Home = (props) => {
           </div>
           <div class="col-smallstuff2">
           <div className='small-banner1 position-relative'>
-          <img src="images/pcb1.png" className='img'
+          <img src="images/astro.jpg" className='img'
           alt='small img'
           />
           <div className='small-title'>Glossy White PCB</div>
@@ -177,7 +177,7 @@ const Home = (props) => {
           </div>
           <div class="col-smallstuff2">
           <div className='small-banner1 position-relative'>
-          <img src="images/penguinswitch.png" className='img'
+          <img src="images/yHh9rNQvqxCDYr7eqOJg_pc.jpg" className='img'
           alt='small img'
           />
                     <div className='small-title'>Penguin Switches</div>
@@ -273,7 +273,7 @@ const Home = (props) => {
   </div>
   <div class="col-smallstuff2">
         <div className='small-banner1 position-relative'>
-        <img src="images/penguinswitch.png" className='img'
+        <img src="images/kailhproswitches.jpg" className='img'
         alt='small img'
         />
                   <div className='small-title'>KEYBOARDS</div>
@@ -283,7 +283,7 @@ const Home = (props) => {
         </div>
         <div class="col-smallstuff2">
         <div className='small-banner1 position-relative'>
-        <img src="images/penguinswitch.png" className='img'
+        <img src="images/tofu.jpg" className='img'
         alt='small img'
         />
                   <div className='small-title'>KEYBOARDS</div>
@@ -293,7 +293,17 @@ const Home = (props) => {
         </div>
         <div class="col-smallstuff2">
         <div className='small-banner1 position-relative'>
-        <img src="images/penguinswitch.png" className='img'
+        <img src="images/Topograph.jpg" className='img'
+        alt='small img'
+        />
+                  <div className='small-title'>Mousepad</div>
+
+        </div>
+        
+        </div>
+        <div class="col-smallstuff2">
+        <div className='small-banner1 position-relative'>
+        <img src="images/disck2.jpg" className='img'
         alt='small img'
         />
                   <div className='small-title'>KEYBOARDS</div>
@@ -303,7 +313,7 @@ const Home = (props) => {
         </div>
         <div class="col-smallstuff2">
         <div className='small-banner1 position-relative'>
-        <img src="images/penguinswitch.png" className='img'
+        <img src="images/zambumon.jpg" className='img'
         alt='small img'
         />
                   <div className='small-title'>KEYBOARDS</div>
@@ -313,20 +323,10 @@ const Home = (props) => {
         </div>
         <div class="col-smallstuff2">
         <div className='small-banner1 position-relative'>
-        <img src="images/penguinswitch.png" className='img'
+        <img src="images/konocoiledergodoxcable.jpg" className='img'
         alt='small img'
         />
-                  <div className='small-title'>KEYBOARDS</div>
-
-        </div>
-        
-        </div>
-        <div class="col-smallstuff2">
-        <div className='small-banner1 position-relative'>
-        <img src="images/penguinswitch.png" className='img'
-        alt='small img'
-        />
-                  <div className='small-title'>KEYBOARDS</div>
+                  <div className='small-title'>Coiled cable </div>
 
         </div>
         
@@ -334,10 +334,10 @@ const Home = (props) => {
         
         <div class="col-smallstuff2">
         <div className='small-banner1 position-relative'>
-        <img src="images/penguinswitch.png" className='img'
+        <img src="images/ducky.jpg" className='img'
         alt='small img'
         />
-                  <div className='small-title'>KEYBOARDS</div>
+                  <div className='small-title'>Ducky one 2 mini</div>
 
         </div>
         

@@ -8,7 +8,7 @@ import { useParams } from "react-router-dom";
 
 export const Product = (props) => {
 
-    const {id, name, price, productImg, nameL} = props.data;
+    const {id, name, price, productImg, nameL, rev} = props.data;
     const {addToBasket, basketItems,addToBasket1} = useContext(StoreContext)
     const amount = basketItems[id]
 
@@ -18,10 +18,13 @@ export const Product = (props) => {
     key={id}>
     <div className='small-banner1 position-relative'>
     <img src={productImg} className='img'
+    onMouseOut={e => (e.currentTarget.src = {GoogleIcon})} 
     alt='small img'
     />
               <div className='small-title-name'>{name}</div>
               <div className='small-title'>£{price}</div>
+              <div className='small-title'>{rev}</div>
+
               
              
               

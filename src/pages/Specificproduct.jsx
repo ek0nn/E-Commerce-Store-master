@@ -51,15 +51,15 @@ const Specificproduct = (props) => {
 
                 <div class="card-body" key={pr.id} >
                   <h5 class="card-title spTitle">{pr.name}</h5>
-                  <p class="card-text spSku">5DFS7238DN</p>
-                  <h5 className='card-text spPrice'> Price</h5>
+                  <p class="card-text spSku"> Item No: 5DFS7238DN</p>
+                  <h5 className='card-text spPrice'> ⭐⭐⭐⭐⭐ 2</h5>
                   <h5 className='card-text spPrice2'> £{pr.price}</h5>
                   <p class="card-text spSku spText22">Shipping calculated at checkout</p>
                   <h5 className='card-text spQuan '> Quantity</h5>
-                  <div className="add2">
-               <button onClick={() => removeItem(id)}> - </button>
+                  <div className="basketHandler ttosdm">
+               <button className = "btn-submit-checkout2" onClick={() => removeItem(id)}> - </button>
                <input className ="customeValue" value={basketItems[id]}></input>
-               <button onClick={() => addToBasket(id)}> + </button>
+               <button className = "btn-submit-checkout2"onClick={() => addToBasket(id)}> + </button>
 
             </div>
                   <p>
@@ -120,7 +120,42 @@ const Specificproduct = (props) => {
         </Link>
 
       </div>
+      <div className='container-xxl'>
 
+      <hr></hr>
+</div>
+      <div className='container-xxl'>
+      <h3 className='reviewTitle'> CUSTOMER REVIEWS </h3>
+      <div className='reviews2'> 
+      <h6 className='reviews22'> Heres what our community has to say</h6>
+      <p className='reviews222'> All of our reviews are from verified customers.</p>
+      <h1 className='reviews22'>5.0</h1>
+      <p className='reviews22'>⭐⭐⭐⭐⭐</p>
+      </div>
+      <div className='custreview'> 
+      <hr></hr>
+
+      <p>David Smith</p>
+      <p className='date'> MAR 22, 2023</p>
+      <p>⭐⭐⭐⭐⭐</p>     
+      <h2>The quality is unbeatable</h2> 
+      <div className='reviewpara'>
+      <p className='reviewpara'>I got these instead of the more common "Cherry MX Blues" - which can rattle, even though they have more prestige. They are great. I am a horrible typist so the firmness required to press the keys with these switches helps me from hitting the wrong keys. Also - reasonably priced.</p>
+      </div>
+     <hr></hr>
+      </div>
+      <div className='custreview'> 
+
+      <p>Jake Griddy</p>
+      <p className='date'> MAR 28, 2023</p>
+      <p>⭐⭐⭐⭐⭐</p>     
+      <h2>Perfection !!</h2> 
+      <div className='reviewpara'>
+      <p className='reviewpara'>I got these instead of the more common "Cherry MX Blues" - which can rattle, even though they have more prestige. They are great. I am a horrible typist so the firmness required to press the keys with these switches helps me from hitting the wrong keys. Also - reasonably priced.</p>
+      </div>
+     <hr></hr>
+      </div>
+      </div>
     </Fragment>
 
 

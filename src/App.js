@@ -26,6 +26,11 @@ import Upload2 from './pages/Upload2';
 import Blog from './pages/Blog';
 import Stripe2 from './stripe';
 import PayStripe from './pages/PayStripe';
+import Article from './pages/Article';
+import Article1 from './pages/Article1';
+import Article2 from './pages/Article2';
+import Article3 from './pages/Article3';
+import Article4 from './pages/Article4';
 function App() {
   
 
@@ -63,6 +68,14 @@ function App() {
       <Route path ="Community" element = {<Community />} />
       <Route path = "payment" element = {<Stripe2 />} />
       <Route path ="securepayment" element = {<PayStripe />} />
+      <Route path ="Article" element = {<Article />} />
+      <Route path ="Article1" element = {<Article1 />} />
+      <Route path ="Article2" element = {<Article2 />} />
+      <Route path ="Article3" element = {<Article3 />} />
+      <Route path ="Article4" element = {<Article4 />} />
+
+
+
 
 
     

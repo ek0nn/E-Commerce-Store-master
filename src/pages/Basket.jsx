@@ -13,9 +13,9 @@ function Basket() {
 
 
   return (
-    <div className='basket'>
+    <div className='container-xxl'>
       <div>
-        <h1> Your items</h1>
+        <h1> Your Basket</h1>
       </div>
       <div className='basketItems'>
         {ITEMS.map((product) => {
@@ -35,7 +35,7 @@ function Basket() {
 
       </div>
       <Link to="/Checkout">
-      <button className="btn-submit-checkout" type="submit">Continue to checkout </button>
+      <button className="btn-submit-checkout mrginb"  type="submit">Continue to checkout </button>
       </Link>
       
 </div>

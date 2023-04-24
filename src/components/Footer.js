@@ -7,7 +7,7 @@ import {BsTwitch} from "react-icons/bs"
 const Footer = () => {
   return (
     <>
-    <footer className='py-4'>
+    <footer className='aa22'>
       <div className='container-xxl'>
         <div className='row align-items-center'>
           
@@ -15,16 +15,16 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-    <footer className='py-4'>
+    <footer className='aa22'>
       <div className='container-xxl'>
         <div className='row'>
           <div className='col-4'>
-          <h5 className='text-white mb-4'>Help & Contact</h5>
+          <h5 className='text-white marginB4'>Help & Contact</h5>
           <div className='footer-links d-flex flex-column'>
-            <Link className="text-white py-2 mb-1">Delivery and Returns</Link>
-            <Link className="text-white py-2 mb-1">Contact us</Link>
-            <Link className="text-white py-2 mb-1">Privacy Policy</Link>
-            <Link className="text-white py-2 mb-1">FAQs</Link>
+            <Link className="tw paddingtb marginB1">Delivery and Returns</Link>
+            <Link className="tw paddingtb marginB1">Contact us</Link>
+            <Link className="tw paddingtb marginB1">Privacy Policy</Link>
+            <Link className="tw paddingtb marginB1">FAQs</Link>
             
             <div className='social_icons d-flex align-items-center gap-30'>
               <a href=''>
@@ -50,29 +50,29 @@ const Footer = () => {
           </div>
           </div>
           <div className='col-3'>
-          <h5 className='text-white mb-4'>About Us</h5>
+          <h5 className='tw marginB4'>About Us</h5>
           <div className='footer-links d-flex flex-column'>
 
-          <Link className="text-white py-2 mb-1">Build Process</Link>
-          <Link className="text-white py-2 mb-1">Modern Slavery Statement</Link>
-          <Link className="text-white py-2 mb-1">Sustainability</Link>
+          <Link to = "./buildprocess" className="tw paddingtb marginB1">Keyboard Guide</Link>
+          <Link className="tw paddingtb marginB1">Modern Slavery Statement</Link>
+          <Link className="tw paddingtb marginB1">Sustainability</Link>
           </div>
           </div>
           <div className='col-3'>
-          <h5 className='text-white mb-4'>Quick Links</h5>
+          <h5 className='tw marginB4'>Quick Links</h5>
           <div className='footer-links d-flex flex-column'>
-            <Link className="text-white py-2 mb-1">Prebuilt</Link>
-            <Link className="text-white py-2 mb-1">Keycaps</Link>
-            <Link className="text-white py-2 mb-1">Switches</Link>
-            <Link className="text-white py-2 mb-1">Accessories</Link>
+          <Link to = "./Filter/keyboards" className="tw paddingtb marginB1">Keyboards</Link>
+            <Link to = "./Filter/keycaps"className="tw paddingtb marginB1">Keycaps</Link>
+            <Link to = "./Filter/switches"className="tw paddingtb marginB1">Switches</Link>
+            <Link to = "./Filter/Accessories"className="tw paddingtb marginB1">Accessories</Link>
           </div>
           </div>
           <div className='col-2'>
-          <h5 className='text-white mb-4'>Payment & Services</h5>
+          <h5 className='tw marginB4'>Payment & Services</h5>
           <div className='footer-links d-flex flex-column'>
-            <Link className="text-white py-2 mb-1">Payment types</Link>
-            <Link className="text-white py-2 mb-1">Gift cards</Link>
-            <Link className="text-white py-2 mb-1">Voucher Codes</Link>
+            <Link className="tw paddingtb marginB1">Payment types</Link>
+            <Link className="tw paddingtb marginB1">Gift cards</Link>
+            <Link className="tw paddingtb marginB1">Voucher Codes</Link>
           </div>
           </div>
         </div>
@@ -82,7 +82,7 @@ const Footer = () => {
     <div className='container-xxl'>
       <div className='row'>
         <div className='col-12'>
-          <p className='text-center mb-0 text-white'> Mohammed Sadhak  </p>
+          <p className='text-center mb-0 tw'> Mohammed Sadhak  </p>
         </div>
       </div>
     </div>

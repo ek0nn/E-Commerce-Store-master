@@ -70,7 +70,7 @@ return (
         </div>
        
         <button type="submit" onClick={submit}
-            class="btn44 btn-primary btn-lg btn-block">Log in</button>
+            class="btn44 btn-submit-checkout btn-lg ">Log in</button>
               <br />
       <p>Dont have an account ?</p>
       <Link to="/signup"> Sign up now</Link>

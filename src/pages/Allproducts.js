@@ -57,7 +57,7 @@ function Allproducts() {
           
         </div>
         <div className='filter-card mb-4'>
-          <h4 className='f-title'>Switches</h4>
+          <h4 className='f-title'>Keyboards</h4>
           <div>
             <ul>
               <li>Clicky</li>
@@ -68,6 +68,7 @@ function Allproducts() {
 
             </ul>
           </div>
+          
         </div>
 
     </div>

@@ -147,17 +147,10 @@ const Checkout = () => {
             </div>
 
             <hr class="my-4" />
-            <h2> Billing information</h2>
-            <div class="col-sm-6">
-              <label for="address" class="form-label-2">Town/City</label>
-              <input type="text" class="form-control-2" placeholder="" required="" />
-              <div class="invalid-feedback">
-                Please enter your town/city
-              </div>
-            </div>
-
-            <button type="submit" onClick={submit}
-              class="btn44 btn-primary btn-lg btn-block">Checkout with stripe</button>
+            
+            <Link to={`/securepayment`}>
+            <button class="btn44 btn-primary btn-lg btn-block" type="submit" onClick={submit}>Checkout with stripe</button>
+              </Link>
             </div>
           </div>
 

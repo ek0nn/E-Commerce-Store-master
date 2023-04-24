@@ -4,6 +4,7 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.",
   "main": "server.js",
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@stripe/react-stripe-js": "^1.11.0",
     "abab": "^2.0.6",
     "abbrev": "^1.1.1",
@@ -68,6 +69,7 @@
     "body-parser": "^1.20.1",
     "bonjour-service": "^1.0.14",
     "boolbase": "^1.0.0",
+    "bootstrap": "^5.2.3",
     "bowser": "^2.11.0",
     "brace-expansion": "^1.1.11",
     "braces": "^3.0.2",
@@ -621,6 +623,7 @@
     "raw-body": "^2.5.1",
     "react": "^18.2.0",
     "react-app-polyfill": "^3.0.0",
+    "react-bootstrap": "^2.7.4",
     "react-chat-engine": "^1.11.28",
     "react-dev-utils": "^12.0.1",
     "react-dom": "^18.2.0",

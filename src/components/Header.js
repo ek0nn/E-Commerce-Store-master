@@ -54,7 +54,7 @@ const Header = () => {
               <div className="header-upper-links d-flex align-items-right ">
             
                 <div>
-                  <Link className="d-flex align-items-right gap-10 text-white ">
+                  <Link to = "./login"className="d-flex align-items-right gap-10 text-white ">
                     <img className="header-icons" src="images/user.png" alt="" />
                     <p className="textacc">
                       {" "}
@@ -67,7 +67,7 @@ const Header = () => {
                   <Link to="/Basket"
                   
                    className="d-flex align-items-right gap-10 text-white ">
-                    Basket
+                    
                     <img className="header-icons" src="images/checkout.png" alt="" />
                     
                     <div className="d-flex flex-column">
@@ -115,18 +115,18 @@ const Header = () => {
                       aria-labelledby="dropdownMenuButton1"
                     >
                       <li>
-                        <a class="dropdown-item text-white" href="asda">
-                          Action
+                        <a class="dropdown-item text-white" href="./Filter/keyboards">
+                          Keyboards
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item text-white" href="#as">
-                          Another action
+                        <a class="dropdown-item text-white" href="./Filter/Keycaps">
+                          Keycaps
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item text-white" href="#">
-                          Something else here
+                        <a class="dropdown-item text-white" href="./Filter/mousemat">
+                          Mousemats
                         </a>
                       </li>
                     </ul>
@@ -136,7 +136,9 @@ const Header = () => {
                     <NavLink className='text-white' to="/">Home</NavLink>
                     <NavLink className='text-white' to="/store">Our Store</NavLink>
                     <NavLink className='text-white' to="/buildprocess">Build Process</NavLink>
+                    <NavLink className='text-white' to="/blog">Blog</NavLink>
                     <NavLink className='text-white' to="/contact">Contact</NavLink>
+
                     
                   </div>
                 </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Blog() {
   return (
@@ -13,7 +14,10 @@ function Blog() {
   <div class="card-body">
     <h1 class="card-text c222 ">What Is a Mechanical Keyboard?</h1>
     <p class="card-text "> A mechanical keyboard is a type of computer keyboard that uses individual mechanical switches for each key, as opposed to a membrane-based keyboard that uses a rubber dome beneath each key.</p>
+    <Link to= "/Article"> 
+
     <button className="btn-submit-checkout" type="submit">Learn more </button>
+    </Link>
   </div>
 </div>
     </div>
@@ -28,8 +32,11 @@ function Blog() {
       <div class="card-body sadda">
         <h5 class="card-title sadda">Your Guide To Keyboard Switches</h5>
         <p class="card-text sadda">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <Link to= "/Article1"> 
+ 
         <button className="btn-submit-checkout" type="submit">Learn more </button>
-        
+        </Link>
+
       </div>
     </div>
   </div>
@@ -45,7 +52,10 @@ function Blog() {
       <div class="card-body sadda ">
         <h5 class="card-title">Better Than an Apple Magic Keyboard?!?</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <Link to= "/Article2"> 
+
         <button className="btn-submit-checkout" type="submit">Learn more </button>
+        </Link>
       </div>
     </div>
   </div>
@@ -60,7 +70,10 @@ function Blog() {
       <div class="card-body">
         <h5 class="card-title">Are Mechanical Keyboards Better?</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <Link to= "/Article3"> 
+
         <button className="btn-submit-checkout" type="submit">Learn more </button>
+     </Link>
       </div>
     </div>
   </div>
@@ -81,8 +94,12 @@ function Blog() {
     <div class="card">
       <img src="images/artisan.jpg" class="card-img-top dsa2dw" alt="..."/>
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">Soldering vs hot swappable</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <Link to= "/Article4"> 
+
+        <button className="btn-submit-checkout" type="submit">Learn more </button>
+</Link>
       </div>
     </div>
   </div>
@@ -90,8 +107,12 @@ function Blog() {
     <div class="card">
       <img src="images/artisan2.jpg" class="card-img-top dsa2dw" alt="..."/>
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">The Benefits of Building Your Own Custom Keyboard</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <Link to= "/Article5"> 
+
+<button className="btn-submit-checkout" type="submit">Learn more </button>
+</Link>
       </div>
     </div>
   </div>
@@ -101,6 +122,10 @@ function Blog() {
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <Link to= "/Article6"> 
+
+        <button className="btn-submit-checkout" type="submit">Learn more </button>
+</Link>
       </div>
     </div>
   </div>

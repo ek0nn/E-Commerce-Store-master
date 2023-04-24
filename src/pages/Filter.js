@@ -5,6 +5,7 @@ import { Product } from '../Product'
 import { useContext } from 'react';
 import { StoreContext } from '../context/StoreContext';
 import { useRoutes } from 'react-router-dom';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 import { useParams } from "react-router-dom";
      
@@ -20,7 +21,7 @@ function Filter() {
 
 
   return (
-    <div className="product-wrapper home-wrapper-2 py-4"> 
+    <div className="product-wrapper home-wrapper-2 aa22"> 
    
     <div className='container-xxl'>
         <div className='row'>
@@ -96,20 +97,26 @@ function Filter() {
 
         <div className='col-8'>
           <div className='sort-grid'>
-            <div className='d-flex align-items-center '>
-              <p>Sort By:</p>
-              <select name='' className='form-control form form-select' id="">
-                <option value="">Featured Products</option>
-                <option value="">Best Selling</option>
-                <option value="">Price, low to high</option>
-                <option value="">Price, high to low</option>
-    
-              </select>
-            </div>
+            <div className='sortbybox'>
+              <p className='sortbyname'>Sort By:</p>
+              <Dropdown className=' sortbybar'>
+      <Dropdown.Toggle class="own">
+        Select
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu >
+        <Dropdown.Item href="">Featured Products</Dropdown.Item>
+        <Dropdown.Item href="./best">Best Selling</Dropdown.Item>
+        <Dropdown.Item href="./best">Price, low to high</Dropdown.Item>
+        <Dropdown.Item href="./best">Price, high to low</Dropdown.Item>
+ 
+      </Dropdown.Menu>
+    </Dropdown>
             <div className='d-flex align-align-items-center gap-5'>
               <p className=''></p>
             </div>
-            
+            </div>
+
             <div className='row'> 
             {sitem.map(pr => (
 

@@ -8,18 +8,22 @@ export const BasketItem = (props) => {
     
 
    
-    return <div className="basketItem">
+    return <div className="container-xxl basketItem">
         
         <img className = "checkoutImg"src={productImg} />
         <div className="desc">
-            <p className="itemName"> <b> Name: </b>  {name}</p>
-            <p className="itemName"> <b> Price: </b> {price} </p>
-            <div className="basketHandler">
-               <button onClick={() => removeItem(id)}> - </button>
+            <p className="itemName"> <b> Name: &nbsp;
+</b>  {name}</p>
+            <p className="itemName"> <b> Price: &nbsp;
+ </b> £{price} </p>
+            <div className="basketHandler ttosdm">
+            <p className="itemName"> <b> Quantity: &nbsp;</b> </p>
+               <button className ="btn-submit-checkout2" onClick={() => removeItem(id)}> - </button>
                <input className ="customeValue" value={basketItems[id]}></input>
-               <button onClick={() => addToBasket(id)}> + </button>
+               <button className ="btn-submit-checkout2" onClick={() => addToBasket(id)}> + </button>
 
             </div>
+            
             <div>
                 <p>  </p>
             </div>

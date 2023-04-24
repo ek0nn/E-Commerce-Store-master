@@ -4,25 +4,24 @@ import { CardElement, useElements, useStripe} from "@stripe/react-stripe-js"
 
 import axios from 'axios'
 
-const CARD_OPTIONS = {
-	iconStyle: "solid",
-	style: {
-		base: {
-			iconColor: "#c4f0ff",
-			color: "#fff",
-			fontWeight: 500,
-			fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
-			fontSize: "16px",
-			fontSmoothing: "antialiased",
-			":-webkit-autofill": { color: "#fce883" },
-			"::placeholder": { color: "#87bbfd" }
-		},
-		invalid: {
-			iconColor: "#ffc7ee",
-			color: "#ffc7ee"
-		}
-	}
-}
+const CARD_ELEMENT_OPTIONS = {
+    style: {
+      base: {
+        width: "500px",
+        color: "white",
+        fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+        fontSmoothing: "antialiased",
+        fontSize: "16px",
+        "::placeholder": {
+          color: "white",
+        },
+      },
+      invalid: {
+        color: "white",
+        iconColor: "white",
+      },
+    },
+  };
 
 
 function Payment() {
@@ -64,9 +63,10 @@ function Payment() {
     
     {!work ?
     <form onSubmit={handleSubmit}>
+      
         <fieldset className='formG'> 
          <div className='FormR'>
-            <CardElement options = {CARD_OPTIONS}/>
+            <CardElement options = {CARD_ELEMENT_OPTIONS}/>
          </div>
         </fieldset>
         <button class="btn44 btn-primary btn-lg btn-block"> Pay</button>
