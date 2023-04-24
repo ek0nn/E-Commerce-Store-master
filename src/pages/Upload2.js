@@ -44,54 +44,14 @@ async function submitB2(e) {
   
 
     <form action="POST">
-      <div class="container">
+      <div class="container-xxl ">
 
 
         <div class="py-5 text-center">
           <div className='row'>
             <div class="col-sm-6">
 
-              <label for="firstname" class="form-label-2">First Name</label>
-              <input type="text" class="form-control-2" id="firstname" placeholder="" required=""
-                onChange={(e) => {
-                  setFirstname(e.target.value);
-                }} />
-              <div class="invalid-feedback">
-                Please enter your first name.
-              </div>
-            </div>
-            <div class="col-sm-6">
-
-<label for="surname" class="form-label-2">First Name</label>
-<input type="text" class="form-control-2" id="firstname" placeholder="" required=""
-  onChange={(e) => {
-    setSurname(e.target.value);
-  }} />
-<div class="invalid-feedback">
-  Please enter your surname name.
-</div>
-</div>
-<div class="col-sm-6">
-
-<label for="number" class="form-label-2">First Name</label>
-<input type="text" class="form-control-2" id="firstname" placeholder="" required=""
-  onChange={(e) => {
-    setNumber(e.target.value);
-  }} />
-<div class="invalid-feedback">
-  Please enter your number .
-</div>
-</div>
-<div class="col-sm-6">
-
-<label for="email" class="form-label-2">First Name</label>
-<input type="text" class="form-control-2" id="firstname" placeholder="" required=""
-  onChange={(e) => {
-    setEmail(e.target.value);
-  }} />
-<div class="invalid-feedback">
-  Please enter your email.
-</div>
+              
 <button onClick={submitB2}> Upload</button>
 
 </div>
