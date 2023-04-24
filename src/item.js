@@ -800,7 +800,8 @@ sort:""
         spec2: "Actuation Force: The actuation force for Cherry MX Black switches is 60g, which means that it requires a medium amount of force to press the key down.",
         spec3: "Travel Distance: The travel distance for Cherry MX Black switches is 2.0mm, which means that the key press is registered at the halfway point of the key press.",
         rev: "⭐⭐⭐⭐⭐(2)",
-        sort:"best"
+        sort:"best",
+        test:"",
     
     },
 ];
